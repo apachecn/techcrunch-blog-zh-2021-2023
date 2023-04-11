@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Top 3 riskiest misconfigurations on the Salesforce platform | TechCrunch</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">Salesforce 平台上 3 大最危险的错误配置| TechCrunch</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2022/11/23/top-3-riskiest-misconfigurations-on-the-salesforce-platform/">https://web.archive.org/web/https://techcrunch.com/2022/11/23/top-3-riskiest-misconfigurations-on-the-salesforce-platform/</a></blockquote><div><header class="article__header ">
+	<p class="article__title-wrapper">
+						</p><h1 class="article__title translated">Salesforce 平台上 3 大最危险的错误配置</h1>
+		
+
+			
+	
+			
+	</header>
+
+			<div class="article-content">
+				<div class="article__contributor-byline-wrapper">
+<div class="article__contributor-byline">
+	
+
+		<div class="contributor-byline__bio">
+		<a href="https://web.archive.org/web/20230319025437/https://www.linkedin.com/in/david-brooks-1a334b/">David Brooks</a><p class="translated">是 Salesforce.com 2005 年上市后加入科帕多的产品高级副总裁。此前，在过去的 34 年里，他曾在 6 家初创公司工作，其中 3 家成功退出。</p></div>
+	
+	</div>
+</div><p id="speakable-summary" class="translated"><span class="featured__span-first-words"> Gartner 估计</span>到 2025 年，70%的企业应用将构建在 Salesforce 和 ServiceNow 等低代码和无代码平台上。但这些平台是否提供了一种虚假的安全感？</p>
+<p class="translated">当被问到时，Salesforce 管理员经常回答说公司负责安全。安全性是 SaaS 应用程序的共同责任。您的提供商保护基础结构，您的管理员和开发人员负责确保最低特权访问权限。</p>
+<p class="translated"><a href="https://web.archive.org/web/20230319025437/https://www.trendmicro.com/vinfo/us/security/research-and-analysis/" target="_blank" rel="noopener">云错误配置</a>导致数据泄露增加了三倍。通常，当允许默认安全设置、分配不适当的访问级别或者没有创建数据屏障来保护敏感数据时，就会发生错误配置。配置一个低代码平台是如此简单，以至于低代码管理员常常不理解勾选复选框的影响。</p>
+<p class="translated">当查看简单复选标记的影响时，这是 Salesforce 平台上三个最危险的错误配置:修改所有数据(MAD)和查看所有数据(VAD)、共享和共享组以及不使用“runAs”方法运行 Apex 代码。</p>
+<p class="translated">让我们来看看每一种方法及其可能产生的影响。</p>
+<p>	</p><div class="article-block block--pullout block--right">
+		<blockquote class="translated">共享组非常强大，但是它们可能会让未授权的用户意外访问。</blockquote>
+	</div>
+	
+<h2 class="translated">MAD 和 VAD</h2>
+<p class="translated">我们从最明显也是最危险的开始。修改所有数据和查看所有数据权限完全按照他们说的做。这些是 Salesforce 的超级用户权限。</p>
+<p class="translated">如果用户拥有 VAD，则他们拥有系统中每个数据记录的读取权限。MAD 意味着他们也可以更新和删除每条记录。这些权限应该只授予管理员，即使这样，也只能授予数量非常有限的人。</p>
+<p class="translated">为什么管理员会想把 MAD 或 VAD 给非管理员？典型的情况是用户无法访问他们需要查看的数据。管理员检查用户的简档和权限集、所有共享规则和角色层次结构，但无法确定用户看不到信息的原因。作为“临时解决方案”，他们给用户 MAD 或 VAD，现在用户可以看到记录，以及系统中的所有其他内容。</p>
+<p class="translated">当开发人员遇到同样的困境时，这种错误也会发生。他们在用户配置文件中临时打开 MAD，以便在他们的代码中取得进展，然后忘记他们打开了它。</p>			</div>
+
+			</div>    
+</body>
+</html>

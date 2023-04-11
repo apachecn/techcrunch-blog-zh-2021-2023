@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Rill wants to rethink BI dashboards</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">Rill 希望重新思考 BI 仪表盘</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2022/08/04/rill-wants-to-rethink-bi-dashboards-with-embedded-database-and-instant-ux/">https://web.archive.org/web/https://techcrunch.com/2022/08/04/rill-wants-to-rethink-bi-dashboards-with-embedded-database-and-instant-ux/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">十年前，<a href="https://web.archive.org/web/20230315095314/https://www.rilldata.com/" target="_blank" rel="noopener"> Rill </a>的创始人第一次涉足数据库，当时他们创办了一家名为 Metamarkets 的公司，这家公司最终在 2017 年被 Snap 收购。在 Metamarkets 时，该公司建立了一个数据库，后来被开源为<a href="https://web.archive.org/web/20230315095314/https://druid.apache.org/" target="_blank" rel="noopener"> Apache Druid </a>项目。Metamarkets 团队后来改进了他们在 Snap 的方法，同时帮助 Snap 员工更轻松地构建仪表板。</p>
+<p class="translated">Rill 于 2020 年推出，旨在基于他们在 Snap 学到的知识，打造创始人所设想的更快更好的 BI dashboarding 工具。他们想要一个底层数据库，能够比简单地从数据源获取数据更快地处理数据库数据，无论数据源是雪花、数据块、BigQuery 还是其他什么。</p>
+<p class="translated">他们希望简化仪表板本身，去掉许多经常挑战数据分析师的设计决策。今天，该公司宣布了一个价值 1200 万美元的种子，并首次公开讨论了它所制造的产品。</p>
+<p class="translated">公司联合创始人兼首席执行官迈克尔·德里斯科尔(Michael Driscoll)表示，他在 2020 年创办该公司的前提是商业智能被打破。他和他的工程师团队(大部分来自他在 Snap 的团队)致力于为更广泛的受众构建更好的解决方案。</p>
+<p class="translated">“在 COVID 中间，我带了一群曾在 Snap 工作过的工程师，我们创建了 Rill。所以在过去的两年里，我们开始销售这种 BI 堆栈，它是 Looker-Snowflake 堆栈的替代产品，”Driscoll 告诉 TechCrunch。</p>
+<p class="translated">该产品由一个数据库组成，旨在更快地处理来自底层数据源的关键数据。当数据分析师或业务用户查询这些数据时，Rill 以非常一致的方式在仪表板上显示这些数据。值得注意的是，他们回到了 Apache Druid 数据库，这是一个他们在元市场时代就很了解的项目。</p>
+<p class="translated">“大多数 BI 工具都是瘦应用程序，没有自己的数据引擎，其速度仅与它们所在的数据库一样快。另一方面，Rill 是一个厚应用程序，自带嵌入式内存 OLAP 引擎(在 Rill Developer 中是<a href="https://web.archive.org/web/20230315095314/https://duckdb.org/" target="_blank" rel="noopener"> DuckDB </a>，在 Rill Cloud 中是 Apache Druid)。这就是为什么我们的仪表板提供令人难以置信的高性能的众所周知的原因，”该公司在宣布资助的博客帖子中写道。</p>
+<p/><div id="attachment_2365963" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2365963" decoding="async" class="size-large wp-image-2365963" src="../Images/e85b9f15e756ef07d8ce85d881ae72dc.png" alt="Rill App in MacBook Pro sitting on a desk in an office." srcset="https://web.archive.org/web/20230315095314im_/https://techcrunch.com/wp-content/uploads/2022/08/Rill-App.jpg 5336w, https://web.archive.org/web/20230315095314im_/https://techcrunch.com/wp-content/uploads/2022/08/Rill-App.jpg?resize=150,96 150w, https://web.archive.org/web/20230315095314im_/https://techcrunch.com/wp-content/uploads/2022/08/Rill-App.jpg?resize=300,191 300w, https://web.archive.org/web/20230315095314im_/https://techcrunch.com/wp-content/uploads/2022/08/Rill-App.jpg?resize=768,490 768w, https://web.archive.org/web/20230315095314im_/https://techcrunch.com/wp-content/uploads/2022/08/Rill-App.jpg?resize=680,434 680w, https://web.archive.org/web/20230315095314im_/https://techcrunch.com/wp-content/uploads/2022/08/Rill-App.jpg?resize=1536,980 1536w, https://web.archive.org/web/20230315095314im_/https://techcrunch.com/wp-content/uploads/2022/08/Rill-App.jpg?resize=2048,1307 2048w, https://web.archive.org/web/20230315095314im_/https://techcrunch.com/wp-content/uploads/2022/08/Rill-App.jpg?resize=1200,766 1200w, https://web.archive.org/web/20230315095314im_/https://techcrunch.com/wp-content/uploads/2022/08/Rill-App.jpg?resize=50,32 50w" sizes="(max-width: 680px) 100vw, 680px" data-original-src="https://web.archive.org/web/20230315095314im_/https://techcrunch.com/wp-content/uploads/2022/08/Rill-App.jpg?w=680"/><p id="caption-attachment-2365963" class="wp-caption-text translated"><strong>图片来源:</strong> Rill</p></div>
+<p class="translated">与许多仪表板产品不同，Rill 为您配置用户界面。除了品牌之外，几乎没有其他选择，Driscoll 认为这真的简化了分析师的工作，因为他们需要做的只是担心数据和他们想在仪表板上看到的东西。</p>
+<p class="translated">“数据分析师不是仪表板设计师，但他们被迫成为仪表板设计师…许多 BI 和数据应用程序强加给分析师的视觉设计选择太多了。里尔有一个非常固执己见的观点。他说:“我们只需说‘嘿，告诉我们你想向你的业务利益相关者展示哪些指标’，然后我们就能自动生成仪表盘。”。</p>
+<p class="translated">企业 SaaS 产品已经推出一年多了，已经有十几家企业客户在使用它。该公司最近还发布了第二款产品，名为 Rill Developer，是开源的。它旨在帮助开发人员从底层源数据存储库中提取数据，并消除与之相关的所有复杂性。</p><p class="piano-inline-promo"/>
+<p class="translated">“我们是开源的 Rill 开发者，实际上是为了帮助那些只想完成工作的分析师。他们可以在他们的数据仓库、数据仓库和数据流中附加这些信息，将数据从[存储库]中转换出来，然后将其塑造成最终支持 BI 仪表板的指标，”他说。</p>
+<p class="translated">到目前为止，他拥有大约 12 家企业客户和数千名用户，正在创造真正的收入。虽然他没有透露具体的收入，但他表示收入接近 500 万美元。</p>
+<p class="translated">两年后，他在世界各地拥有 24 名员工。该公司从第一天起就完全处于偏远地区，这有助于从这种方式中建立多样性。“我们有很多方式来思考多样性。首先，我认为我们是全球化的，因此我们有来自世界各地不同文化和国家的人。</p>
+<p class="translated">今天的 1200 万美元种子投资来自 True Ventures、彭博贝塔、塞拉风险投资公司、Park West Asset Management 和 DCVC，以及二十多位数据创业天使。</p>
+
+			</div>
+
+			</div>    
+</body>
+</html>

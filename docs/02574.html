@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Flaws in third-party software exposed dozens of Teslas to remote access • TechCrunch</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">第三方软件中的缺陷使数十个 Teslas 暴露于远程访问 TechCrunch</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2022/01/24/teslamate-bug-teslas-exposed-remote/?guccounter=1">https://web.archive.org/web/https://techcrunch.com/2022/01/24/teslamate-bug-teslas-exposed-remote/?guccounter=1</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">一名安全研究人员表示，他能够远程访问世界各地的数十辆特斯拉，因为在一个受特斯拉车主欢迎的开源日志工具中发现的安全漏洞将他们的汽车直接暴露在互联网上。</p>
+<p class="translated">本月早些时候，德国安全研究员大卫·科伦坡在推特上首次披露了该漏洞的消息<a href="https://web.archive.org/web/20221005230724/https://twitter.com/david_colombo_/status/1480632304045330433?s=20" target="_blank" rel="noopener">，他说他“完全远程控制”了超过 25 辆特斯拉，但在没有公开细节和提醒恶意黑客的情况下，他很难向受影响的特斯拉车主披露这一问题。</a></p>
+<p class="translated">科伦坡证实，该漏洞现已修复。TechCrunch 一直坚持这一说法，直到该漏洞无法再被利用。科伦坡在<a href="https://web.archive.org/web/20221005230724/https://medium.com/@david_colombo/how-i-got-access-to-25-teslas-around-the-world-by-accident-and-curiosity-8b9ef040a028" target="_blank" rel="noopener">的博客文章</a>中发表了他的发现。</p>
+<p class="translated">科伦坡告诉 TechCrunch，这些漏洞是在 TeslaMate 中发现的，Tesla mate 是一款<a href="https://web.archive.org/web/20221005230724/https://docs.teslamate.org/docs/screenshots/" target="_blank" rel="noopener">免费下载的日志软件</a>，特斯拉车主使用它来连接到他们的车辆，访问他们的汽车的其他隐藏数据——他们汽车的能耗，位置历史，驾驶统计和其他用于故障排除和诊断问题的粒度数据。TeslaMate 是一个自托管的网络仪表盘，通常在特斯拉爱好者的家用电脑上运行，并依赖于对特斯拉 API 的访问来接入他们的汽车数据，这些数据与车主的账户相关联。</p>
+<p class="translated">但是网络仪表盘的安全缺陷——比如允许匿名访问和使用一些用户从未更改的默认密码——加上一些特斯拉车主的错误配置，导致至少 100 个 TeslaMate 仪表盘直接暴露在互联网上，包括车主用来远程控制他们的 Tesla 的 API 密钥。</p>
+<p class="translated">科伦坡在与 TechCrunch 的通话中表示，受影响的特斯拉数量可能会更高。</p>
+<p/><div id="attachment_2257629" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2257629" loading="lazy" class="breakout wp-image-2257629 size-full" src="../Images/9edd502aa1fdf014f6a1163688266085.png" alt="" srcset="https://web.archive.org/web/20221005230724im_/https://techcrunch.com/wp-content/uploads/2022/01/tesla-map.png 900w, https://web.archive.org/web/20221005230724im_/https://techcrunch.com/wp-content/uploads/2022/01/tesla-map.png?resize=150,93 150w, https://web.archive.org/web/20221005230724im_/https://techcrunch.com/wp-content/uploads/2022/01/tesla-map.png?resize=300,186 300w, https://web.archive.org/web/20221005230724im_/https://techcrunch.com/wp-content/uploads/2022/01/tesla-map.png?resize=768,475 768w, https://web.archive.org/web/20221005230724im_/https://techcrunch.com/wp-content/uploads/2022/01/tesla-map.png?resize=680,421 680w, https://web.archive.org/web/20221005230724im_/https://techcrunch.com/wp-content/uploads/2022/01/tesla-map.png?resize=50,31 50w" sizes="(max-width: 900px) 100vw, 900px" data-original-src="https://web.archive.org/web/20221005230724im_/https://techcrunch.com/wp-content/uploads/2022/01/tesla-map.png"/><p id="caption-attachment-2257629" class="wp-caption-text translated">其中一个暴露的 TeslaMate 仪表盘显示了一辆特斯拉最近在加州的行驶路线。TeslaMate 已经修复了它的漏洞，特斯拉已经撤销了数千个 API 密钥。<strong>图片来源:</strong>大卫·科伦坡(已提供)</p></div>
+<p class="translated">科伦坡说，他发现 TeslaMate 仪表板在去年被一个暴露的仪表板绊倒后，默认情况下是没有保护的。在互联网上搜索更多的公开仪表板后，他发现英国、欧洲、加拿大、中国和美国各地都有暴露的特斯拉。</p>
+<p class="translated">但科伦坡解释说，联系仪表板暴露的特斯拉车主将是一项艰巨的任务，在许多情况下，不可能准确识别联系受影响的特斯拉客户的方法。</p>
+<p class="translated">更糟糕的是，它可以从暴露的仪表板中提取特斯拉用户的 API 密钥，让恶意黑客在司机不知情的情况下长期访问特斯拉。(一个 API 允许两个东西通过互联网相互对话——在这个例子中，是一辆特斯拉汽车和该公司的服务器，特斯拉应用程序或 TeslaMate 仪表盘。)通过与所有者账户相关联的私有 API 密钥，对特斯拉 API 的访问被限制于特斯拉所有者。</p>
+<p class="translated">科伦坡说，通过访问一个暴露的 API 密钥，他可以远程访问汽车的一些功能，如解锁门窗，按喇叭和启动无钥匙驾驶，他向爱尔兰的一位特斯拉车主验证了这一点。他还可以访问车内的数据，比如车的位置数据、最近的行驶路线以及车停在哪里。科伦坡说，他不相信有可能使用 API 访问通过互联网远程移动车辆。</p>
+<p class="translated">科伦坡表示，虽然安全问题不在特斯拉的基础设施中，但特斯拉可以采取更多措施来提高其安全性，例如当客户的密码被更改时，撤销他们的 API 密钥，这是一种行业标准做法。</p>
+<p class="translated">在私下报告漏洞后，TeslaMate <a href="https://web.archive.org/web/20221005230724/https://github.com/adriankumpf/teslamate/releases/tag/v1.25.1" target="_blank" rel="noopener">推出了一个软件补丁</a>，用户必须手动安装才能阻止访问。TeslaMate 项目维护者 Adrian Kumpf 告诉 TechCrunch，更新在收到 Colombo 的电子邮件后几个小时内就发布了。在一封电子邮件中，Kumpf 表示，由于该软件是自托管的，它无法防止用户意外将他们的系统暴露在互联网上，并补充说 TeslaMate 的文档长期以来一直警告用户“在你的家庭网络上安装该软件，否则你的特斯拉 API 令牌可能会有风险。”Kumpf 还表示，选择高级安装选项的用户应该不会受到影响。</p>
+<p class="translated">科伦坡告诉 TechCrunch，特斯拉撤销了数千个司机的 API 密钥，这可能表明这个问题可能比最初想象的更广泛。在本文发表之前，特斯拉没有回应置评请求。(特斯拉<a href="https://web.archive.org/web/20221005230724/https://techcrunch.com/2020/10/15/teslas-decision-to-scrap-its-pr-department-could-create-a-pr-nightmare/">于 2020 年解散其公关团队</a>。)</p>
+<p class="translated"><strong>阅读更多:</strong></p>
+
+			</div>
+
+			</div>    
+</body>
+</html>

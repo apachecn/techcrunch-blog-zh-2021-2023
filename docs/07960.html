@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Data leak exposes China's vast surveillance state</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">数据泄露暴露了中国庞大的监控系统</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2022/07/07/china-leak-police-database/">https://web.archive.org/web/https://techcrunch.com/2022/07/07/china-leak-police-database/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">包含大约 10 亿中国居民信息的大规模数据存储可能是历史上最大的个人信息泄露事件之一。</p>
+<p class="translated">部分泄露的数据上周出现在一个已知的网络犯罪论坛上，来自一个以 10 比特币(约合 20 万美元)出售缓存的人，据称是从存储在阿里巴巴云端的上海警方数据库中窃取的。</p>
+<p class="translated">尽管泄露的细节仍然很少，部分数据已经被<a href="https://web.archive.org/web/20230315100823/https://www.wsj.com/articles/vast-cache-of-chinese-police-files-offered-for-sale-in-alleged-hack-11656940488" target="_blank" rel="noopener">证实是真实的</a>，这表明至少部分数据是真实的。这些数据的来源以及它们是如何落入一个地下卖家手中的，其动机尚不清楚，目前仍不清楚。</p>
+<p class="translated">在 mainland China，对言论和表达的限制受到严格控制，互联网接入受到审查和严格限制，有关所谓的违规行为的新闻基本上没有被报道。</p>
+<p class="translated">如果这一漏洞是真实的，那么它将引发人们对中国监控系统规模的质疑。中国的监控系统是世界上规模最大、范围最广的，而北京方面有能力保护这些数据的安全。</p>
+<p class="translated">这是我们目前了解到的情况。</p>
+<h2 class="translated">数据是怎么泄露的？</h2>
+<p class="translated">在网络犯罪论坛(cybercrime forum)的一篇已被删除的帖子中，卖家声称从中国电子商务巨头阿里巴巴的云计算部门托管的云存储服务器上下载了数据。周一，当 TechCrunch 联系到阿里巴巴时，阿里巴巴表示正在调查这些指控。</p>
+<p class="translated">数据究竟是如何泄露的尚不清楚，但专家表示，该数据库可能自 2021 年 4 月被发现之前就因人为错误<a href="https://web.archive.org/web/20230315100823/https://www.cnn.com/2022/07/05/china/china-billion-people-data-leak-intl-hnk/index.html" target="_blank" rel="noopener">而被错误配置和暴露。这似乎排除了一种说法，即该数据库的证书在 2020 年作为一篇技术博客帖子的一部分被无意中发布在一个中国开发者网站上，后来被用于从警方数据库中窃取数十亿条记录，因为访问该数据库不需要密码。</a></p>
+<p class="translated">乌克兰安全研究员鲍勃·迪亚琴科(Bob Diachenko)告诉 TechCrunch，他自己的监控记录显示，该数据库也在 4 月下旬通过 Kibana dashboard 暴露，Kibana dashboard 是一种基于网络的软件，用于可视化和搜索大型弹性搜索数据库。如果数据库不像人们认为的那样需要密码，任何人只要知道它的网址就可以访问数据。</p>
+<p class="translated">安全研究人员经常扫描互联网，寻找无意中暴露的数据库或其他敏感数据，通常是为了收集他们帮助保护的公司提供的奖金。但是威胁者也运行相同的扫描，通常目标是从暴露的数据库中复制数据，删除它，并以支付赎金为条件提供数据回报——这是近年来犯罪分子垃圾箱掠夺者越来越常用的策略。迪亚琴科说这一次就是这么回事；一个恶意的演员发现，突袭并删除了暴露的数据库，并留下了一张赎金纸条，要求 10 个比特币作为回报。</p>
+<p class="translated">“我的假设是，勒索信没有起作用，威胁者决定去别的地方取钱。或者，另一个恶意的演员偶然发现了这些数据，并决定将其放在网上出售，”迪亚琴科说。</p>
+<p class="translated">人们对卖家以及数据被转储到网上的原因知之甚少。在网络犯罪论坛和黑暗网络上看到大量个人数据出售并不罕见，但很少出现如此敏感或如此大量的数据。</p>
+<h2 class="translated">数据是什么样的？</h2>
+<p class="translated">TechCrunch 审查了卖家上传的一个更大的数据样本，其中包含三个文件，总共约 500 兆字节，每个文件包含 25 万条个人记录。</p>
+<p class="translated">数据本身采用 JSON 格式，这是 Elasticsearch 数据库的标准文件格式，便于阅读和分析。数据库的格式表明，它是精心维护和下载的，而不是纯粹从多个数据源汇总信息创建的，这是信息卖家和数据经纪人使用的一种常见技术<a href="https://web.archive.org/web/20230315100823/https://techcrunch.com/2020/06/19/oracle-bluekai-web-tracking/">。然而，一些数据可能来自外部来源，如食品交付订单。</a></p>
+<p class="translated">让这些数据有可能是真实的还有数据的庞大规模，以及数据的详细程度难以伪造——尽管并非不可能。</p>
+<p class="translated">TechCrunch 翻译了用中文写的警方记录，并编辑了个人身份信息。</p>
+<p class="translated">[gallery type = " slide show " ids = " 2349124，2349126，2349127，2349128，2349129，2349130"]</p>
+<p class="translated">这些文件似乎包含了从 1995 年到 2019 年的详细警方报告，包括姓名、地址、电话号码、身份号码、性别，以及为什么出动警察的原因。TechCrunch 看到的记录包括事件发生或警方报告的具体坐标，以及提交报告的线人的姓名，这些信息与每份记录中列出的准确地址以及个人的种族和民族相匹配。(中国政府已经监禁了 100 多万本国公民，其中大部分来自穆斯林少数民族，包括维吾尔族和哈萨克族，拜登政府已经<a href="https://web.archive.org/web/20230315100823/https://techcrunch.com/2021/12/01/federal-lorex-surveillance-ban/">宣布这是一场“种族灭绝”</a>)</p>
+<p class="translated">这些记录包含投诉和刑事指控，从涉及暴力的严重犯罪到相对平庸的犯罪，如信用卡欺诈、互联网诈骗和赌博的详细报告，赌博在中国是非法的。TechCrunch 看到的几份记录显示，警方报告打击了使用虚拟专用网络(VPN)的行为，这种网络用于<a href="https://web.archive.org/web/20230315100823/https://techcrunch.com/2020/07/15/vpn-rethink-hong-kong-servers/">访问被中国审查系统</a>屏蔽的网站，因此在中国是非法的。一份记录显示，一名上海居民被指控使用 VPN 在 Twitter 上发布批评政府的言论，这在中国是被禁止的。不知道这个人后来发生了什么。</p>
+<p class="translated">这些数据还包含存储在同一台服务器上的照片的完整网址，在撰写本报告时，这些网址都无法访问，但相关数据通常会显示上传的内容，如一个人的居留文件或其出国时的护照。这些网址的格式与阿里巴巴云服务存储文件的方式一致。</p>
+<p class="translated">根据数据中列出的出生日期和年龄，我们检查的许多记录似乎包含儿童信息。</p>
+<p class="translated">没有(不太可能)来自中国政府的确认，很难确切知道卖家的说法是否属实，数据是否如其所称是从上海市公安局获得的。《华尔街日报》、<a href="https://web.archive.org/web/20230315100823/https://www.nytimes.com/2022/07/05/business/china-police-data-breach.html" target="_blank" rel="noopener">、《纽约时报》</a>和<a href="https://web.archive.org/web/20230315100823/https://www.cnn.com/2022/07/05/china/china-billion-people-data-leak-intl-hnk/index.html" target="_blank" rel="noopener">美国有线电视新闻网</a>已经通过给在数据库中找到其信息的个人打电话核实了部分数据，从而增强了数据的真实性。</p>
+<h2 class="translated">有什么影响？</h2>
+<p class="translated">这种所谓的入侵如果被证明是合法的，可能会对北京造成极大损害，并引发人们对政府网络安全措施的质疑，以及这种入侵将对个人产生的影响。</p>
+<p class="translated">它的出现正值中国加强对个人数据的保护。去年九月，中国通过了个人信息保护法，这是第一部全面的隐私和数据保护立法，被广泛认为是中国的 GDPR 隐私条例。该法律限制了企业收集个人数据的方式，预计将对中国最大的科技巨头的广告业务产生广泛影响，但允许构成中国庞大监控能力的政府机构和部门有广泛的例外。</p>
+<p class="translated">据报道，北京已经在审查涉嫌违规的新闻，中国的消息应用微信和微博正在屏蔽消息和提及“数据泄露”和“数据库违规”中国政府尚未对此次泄密事件发表评论。</p>
+<p class="translated">这不是第一次涉及大量中国居民数据的安全漏洞，这些数据在没有密码的情况下暴露在更广泛的互联网上。2019 年，TechCrunch 报道称，中国的一个智能城市装置正在<a href="https://web.archive.org/web/20230315100823/https://techcrunch.com/2019/05/03/china-smart-city-exposed/">泄露附近居民的面部识别数据库</a>的内容。</p>
+
+<hr/>
+<p class="translated"><i>你可以通过+1 646-755-8849 或电子邮件联系 Signal 和 WhatsApp 或 zack.whittaker@techcrunch.com 的记者。</i></p>
+			</div>
+
+			</div>    
+</body>
+</html>

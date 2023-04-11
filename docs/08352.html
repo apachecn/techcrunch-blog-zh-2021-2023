@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Security flaws in GPS tracker exposing 1M vehicle locations</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">GPS 追踪器的安全漏洞暴露了一百万辆车的位置</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2022/07/19/micodus-gps-tracker-exposing-vehicle-locations/">https://web.archive.org/web/https://techcrunch.com/2022/07/19/micodus-gps-tracker-exposing-vehicle-locations/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">根据新的研究，一种受欢迎的中国制造的 GPS 车辆跟踪器的安全漏洞可以很容易地被利用来跟踪和远程切断世界上至少 100 万辆汽车的发动机。更糟糕的是，制造 GPS 追踪器的公司没有努力去修理它们。</p>
+<p class="translated">网络安全初创公司 BitSight 表示，它在 MV720 中发现了六个漏洞，mv 720 是一种由深圳电子制造商 MiCODUS 制造的硬连线 GPS 追踪器，该公司声称，目前全球有超过 42 万名客户在使用超过 150 万个 GPS 追踪器，包括拥有车队的公司、执法机构、军队和国家政府。BitSight 在报告中称<a href="https://web.archive.org/web/20230318113745/https://www.bitsight.com/blog/bitsight-discovers-critical-vulnerabilities-widely-used-vehicle-gps-tracker" target="_blank" rel="noopener">还发现了财富 50 强公司和一家核电站运营商使用的 GPS 追踪器。</a></p>
+<p class="translated">但是，这些安全漏洞可以很容易地被远程利用来实时跟踪任何车辆，访问过去的路线，并切断行驶中车辆的引擎。</p>
+<p class="translated">BitSight 的首席安全研究员佩德罗·翁贝利诺(Pedro Umbelino)在 TechCrunch 发表前撰写了这份报告，他说，这些漏洞“不难利用”，这些缺陷的性质留下了“关于其他模型的漏洞的重大问题”，这表明这些漏洞可能不仅限于一个 MiCODUS GPS 追踪器模型。</p>
+<p class="translated">鉴于这些漏洞的严重性以及没有修复方法，BitSight 和美国政府网络安全咨询机构 CISA 都警告车主尽快移除这些设备，以降低风险。</p>
+<p class="translated">这六个漏洞的严重性和可利用性各不相同，但除了一个以外，其他都被评为“高”或更高的严重性。一些漏洞存在于 GPS 追踪器本身，而另一些则存在于用户用来追踪其车队的网络仪表盘上。</p>
+<p class="translated">最严重的缺陷是一个硬编码的密码，可以用来完全控制任何 GPS 跟踪器，访问车辆的实时位置和过去的路线，并远程切断车辆的燃料供应。因为密码直接嵌入到 Android 应用程序的代码中，任何人都可以在代码周围挖掘并找到它。</p>
+<p/><div id="attachment_2356282" class="wp-caption alignnone"><img aria-describedby="caption-attachment-2356282" decoding="async" class="wp-image-2356282 size-full" src="../Images/ccdfcee5bb26032ce8d226b61af8226a.png" alt="Dots on a map representing Micodus users" srcset="https://web.archive.org/web/20230318113745im_/https://techcrunch.com/wp-content/uploads/2022/07/micodus-map.jpg 1934w, https://web.archive.org/web/20230318113745im_/https://techcrunch.com/wp-content/uploads/2022/07/micodus-map.jpg?resize=150,77 150w, https://web.archive.org/web/20230318113745im_/https://techcrunch.com/wp-content/uploads/2022/07/micodus-map.jpg?resize=300,155 300w, https://web.archive.org/web/20230318113745im_/https://techcrunch.com/wp-content/uploads/2022/07/micodus-map.jpg?resize=768,396 768w, https://web.archive.org/web/20230318113745im_/https://techcrunch.com/wp-content/uploads/2022/07/micodus-map.jpg?resize=680,351 680w, https://web.archive.org/web/20230318113745im_/https://techcrunch.com/wp-content/uploads/2022/07/micodus-map.jpg?resize=1536,793 1536w, https://web.archive.org/web/20230318113745im_/https://techcrunch.com/wp-content/uploads/2022/07/micodus-map.jpg?resize=1200,619 1200w, https://web.archive.org/web/20230318113745im_/https://techcrunch.com/wp-content/uploads/2022/07/micodus-map.jpg?resize=50,26 50w" sizes="(max-width: 1024px) 100vw, 1024px" data-original-src="https://web.archive.org/web/20230318113745im_/https://techcrunch.com/wp-content/uploads/2022/07/micodus-map.jpg"/><p id="caption-attachment-2356282" class="wp-caption-text translated">用红点代表一个 MiCODUS 用户的地图。<b>图片来源:</b>bit sight/已提供。</p></div>
+<p class="translated">研究还发现，GPS 追踪器带有一个默认密码“123456”，允许任何人访问没有更改其设备密码的 GPS 追踪器。BitSight 发现，在它测试的 1，000 台设备样本中，95%的设备都可以使用不变的默认密码访问，这可能是因为设备所有者在设置时不会被提示更改设备的密码。</p>
+<p class="translated">剩下的两个漏洞被称为不安全的直接对象引用(IDORs)，允许登录用户从不属于他们的易受攻击的 GPS 跟踪器中访问数据，并生成包含设备活动的电子表格，如过去的位置和路线。</p>
+<p class="translated">研究人员表示，他们在世界各地发现了易受攻击的 MiCODUS GPS 追踪器，这些设备集中在乌克兰、俄罗斯、乌兹别克斯坦和巴西，以及整个欧洲，包括西班牙、波兰、德国和法国。BitSight 的发言人凯文·龙(Kevin Long)告诉 TechCrunch，它在美国看到的设备比例较小，但这个数字可能是“数千”台设备。</p>
+<p class="translated">BitSight 首席执行官斯蒂芬·哈维(Stephen Harvey)表示，这些漏洞有可能给受影响的车主带来“灾难性后果”。这家安全公司在 2021 年 9 月首次联系了 MiCODUS，但在报告发布前没有做出任何努力来修复漏洞。在漏洞公开之前，安全研究人员通常会给公司三个月的时间来修复漏洞，让开发人员有时间在漏洞细节公布之前进行补救。</p>
+<p class="translated">MiCODUS 没有回应 TechCrunch 在文章发表前发出的置评请求。</p>
+
+			</div>
+
+			</div>    
+</body>
+</html>

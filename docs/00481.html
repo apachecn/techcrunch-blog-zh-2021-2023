@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Cruise lays out its plan for 'how' it will make robotaxis a reality • TechCrunch</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">Cruise 展示了其“如何”实现机器人轴的计划 TechCrunch</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2021/11/05/cruise-lays-out-its-plan-for-how-it-will-make-robotaxis-a-reality/">https://web.archive.org/web/https://techcrunch.com/2021/11/05/cruise-lays-out-its-plan-for-how-it-will-make-robotaxis-a-reality/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">周四晚上，在深入研究 Cruise 自动驾驶汽车技术的过程中，一系列工程师从未提及特斯拉的名字。他们不需要这么做，尽管信息已经很清楚了。</p>
+<p class="translated">通用汽车的自动驾驶子公司 Cruise 展示了一份技术和部署路线图——在粒度级别上——旨在展示它如何制造出比任何人类驾驶的车辆都更安全、更可扩展的自动驾驶汽车，包括那些配备了高级驾驶辅助系统的汽车。</p>
+<p class="translated">虽然 Cruise 显然在为自己的技术辩护(更不用说试图招募新人才了)，但这一事件也是对自动驾驶汽车的一种普遍支持。周四发言的每个工程师或产品负责人都展示了各种组件，从它如何使用模拟和开发自己的芯片和其他硬件，到它的应用程序和车辆本身的设计。</p>
+<p class="translated">这个名为“引擎盖下”的活动基于首席执行官丹·阿曼上个月在通用汽车投资者日期间发表的评论，他在评论中阐述了该公司推出商业机器人和送货服务的计划，该服务从改装的雪佛兰 Bolts 开始，最终在未来几年内扩展到数万辆专门制造的 Origin AVs。</p>
+<p class="translated">Cruise <a href="https://web.archive.org/web/20230207104441/https://techcrunch.com/2021/09/30/cruise-waymo-get-ok-to-launch-robotaxi-service-in-san-francisco/">刚刚在加州</a>获得了开展商业送货服务的许可，距离能够对<a href="https://web.archive.org/web/20230207104441/https://techcrunch.com/2021/11/03/cruise-launches-driverless-robotaxi-service-for-employees-in-san-francisco/">无人驾驶叫车</a>收费还有一个许可。尽管如此，Cruise 认为它能够将成本降低到足以快速扩大规模的水平。</p>
+<p class="translated">以下是方法。</p>
+<h2 class="translated">使用模拟来扩展，而不仅仅是验证系统</h2>
+<p class="translated">Cruise 不仅依靠模拟来证明其安全性，还可以扩展到新城市，而不必先在这些城市进行数百万英里的测试。</p><p class="piano-inline-promo"/>
+<p class="translated">该公司仍需绘制其进入城市的地图。但它不必重新映射城市来跟踪不可避免发生的环境变化，如车道变化或街道封闭。Cruise 的模拟技术战略主管希德·甘地(Sid Gandhi)表示，当 Cruise 前往新城市时，它会从一项名为 WorldGen 的技术开始，该技术可以精确、大规模地生成整个城市，“从它们古怪的布局到最小的细节”，这使工程师可以测试新的运营设计领域。换句话说，WorldGen 成为设定未来模拟的舞台。</p>
+<p class="translated">为了确保最佳的世界创造，Cruise 考虑了一天中 24 个不同时间和天气条件下的照明等因素，甚至系统地测量了旧金山一系列路灯的光线。</p>
+<p class="translated">甘地说:“当我们将高保真环境与程序生成的城市相结合时，我们就释放了将业务高效扩展到新城市的能力。”。</p>
+<p class="translated">然后，他为“模拟之路”设计了技术，该技术可以将 AVs 在路上收集的真实事件转化为可编辑的模拟场景。这确保了反病毒软件不会通过测试它已经看到的场景而倒退。</p>
+<p class="translated">“Sim 之路将来自感知的信息与从我们数百万英里的现实世界中学习到的启发结合起来，从道路数据中重建一个完整的模拟环境，”甘地说。“一旦我们有了模拟，我们实际上可以创建事件的排列，并改变车辆和行人类型等属性。这是一种超级简单且极其强大的方式来构建加速反病毒开发的测试套件。”</p>
+<p class="translated">对于 Cruise 无法在现实世界的道路条件下收集的特定场景，还有 Morpheus。Morpheus 是一个可以根据地图上的特定位置生成模拟的系统。它使用机器学习来自动输入尽可能多的参数，以生成数千个有趣而罕见的场景，并根据这些场景来测试 AV。</p>
+<p class="translated">甘地说:“当我们致力于解决长尾问题时，我们将越来越少依赖真实世界的测试，因为当你遇到一个很少发生的事件时，需要数千英里的道路来正确测试它，而且它不可扩展。”“因此，我们正在开发技术，以可扩展地探索大规模参数空间，从而生成测试场景。”</p>
+<p class="translated">测试场景还包括模拟其他道路使用者对 AV 的反应。克鲁斯的这个系统被称为非玩家角色(NPC)人工智能，这通常是一个视频游戏术语，但在这种情况下，指的是场景中所有代表复杂多智能体行为的汽车和行人。</p>
+<p class="translated">“所以 Morpheus，Road to Sim 和 NPC·艾以这种真正深思熟虑的方式合作，让我们在罕见和困难的事件中进行更强大的测试，”甘地说。“这真的给了我们信心，我们可以解决现在罕见的问题，也可以解决未来类似的问题。”</p>
+<p class="translated">甘地说，生成合成数据有助于 Cruise AV 瞄准特定的用例，他特别指出了识别紧急车辆并与之互动，大概没有其他原因，只是为了挖苦特斯拉，其自动驾驶 ADAS 系统因多次撞上紧急车辆而受到联邦审查。</p>
+<p class="translated">甘地说:“与其他类型的车辆相比，紧急车辆很少，但我们需要以极高的精度检测它们，所以我们使用我们的数据生成管道来创建救护车、消防车和警车的数百万幅模拟图像。”“根据我们的经验，有针对性的合成数据比收集道路数据快大约 180 倍，而且便宜数百万美元。通过合成数据和真实数据的正确组合，我们可以将数据集中的相关数据增加一个数量级或更多。”</p>
+<h2 class="translated">内部开发的两个定制硅芯片</h2>
+<p class="translated">在通用汽车 10 月份的投资者日期间，Cruise 首席执行官丹·阿曼概述了该公司对 Origin 的计算能力进行大量投资的计划，以便在未来四代内将成本降低 90%，从而可以实现盈利。当时，阿曼提到克鲁斯打算在内部制造定制硅以降低成本，但没有直接承认使用硅来制造芯片——但 TechCrunch 有自己的理论。周四，Origin 项目的首席工程师 Rajat Basu 证实了这些理论。</p>
+<p class="translated">“我们的第四代计算平台将基于我们的内部定制硅开发，”Basu 说。“这是专门为我们的应用而构建的。它支持聚焦和提高处理能力，同时显著降低单件成本和功耗。从安全角度来看，计算是一个关键系统，并内置了冗余。再加上 AV 系统每秒处理高达 10gb 的数据，我们最终会消耗相当多的电力。我们的 MLH 芯片允许我们以更加专注的方式运行复杂的机器学习管道，这反过来帮助我们在不牺牲性能的情况下提高能效。”</p>
+<p class="translated">Cruise 的人工智能团队开发了两种芯片:传感器处理芯片将为相机、雷达和声学等一系列传感器进行边缘处理。第二个芯片旨在成为一个专用的神经网络处理器，支持并加速机器学习应用程序，如人工智能团队开发的那些大型多任务模型。Basu 表示，机器学习加速器(MLA)芯片的大小正好可以解决某一类神经网络和 ML 应用，仅此而已。</p>
+<p class="translated">“这使性能保持在极高的水平，并确保我们不会浪费精力做任何对我们没有附加值的事情，”Basu 说。它可以与多个外部主机配对，也可以独立运行。它支持高达 25G 的单以太网，总带宽为 400G。我们投入量产的 MLA 芯片只是一个开始。随着时间的推移，我们将继续提高性能，同时降低功耗。”</p>
+<h2 class="translated">邮轮生态系统</h2>
+<p class="translated">Cruise 在活动中明确表示，它不仅考虑了成功扩大规模所需的 AV 技术，还考虑了整个生态系统，包括远程协助操作员在遇到未知场景时验证 AV 的决定，客户服务，人们实际上想要乘坐的车辆，以及可以高效轻松地处理客户支持和事件响应等事情的应用程序。</p>
+<p class="translated">“要真正跨越从研发到心爱产品的鸿沟，需要的不仅仅是人工智能和机器人，”克鲁斯的产品副总裁奥利弗·卡梅伦在活动上说。“仅仅有一辆安全的自动驾驶汽车是不够的，这只是漫长旅程的第一步。要真正建立和扩展一个被数百万人纳入日常生活的有竞争力的产品，你需要在安全的自动驾驶基础上建立一系列与众不同的功能和工具。这些功能需要如何实现并不明显，尤其是如果你的公司仍然在埋头解决安全问题。”</p>
+			</div>
+
+			</div>    
+</body>
+</html>

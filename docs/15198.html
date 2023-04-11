@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Ransomware gang uses new zero-day to steal data on 1 million patients | TechCrunch</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">勒索软件团伙利用新的零时差窃取 100 万患者的数据| TechCrunch</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2023/02/15/clop-ransomware-community-health-systems/">https://web.archive.org/web/https://techcrunch.com/2023/02/15/clop-ransomware-community-health-systems/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated"><span class="featured__span-first-words">一个多产的勒索软件</span>带着老把戏和新受害者回来了。</p>
+<p class="translated">社区卫生系统(CHS)是美国最大的医疗保健提供商之一，在 16 个州拥有近 80 家医院，本周证实，犯罪黑客访问了多达 100 万名患者的个人和受保护的健康信息。</p>
+<p class="translated">这家总部位于田纳西州的医疗保健巨头在<a href="https://web.archive.org/web/20230407072138/https://www.sec.gov/Archives/edgar/data/1108109/000119312523035789/d422693d8k.htm" target="_blank" rel="noopener">提交给政府监管机构</a>的文件中表示，数据泄露源于其使用了一款由 Fortra 开发的名为 GoAnywhere MFT 的流行文件传输软件(之前称为<a href="https://web.archive.org/web/20230407072138/https://www.fortra.com/resources/press-releases/helpsystems-now-fortra" target="_blank" rel="noopener"> HelpSystems </a>),大型企业部署该软件以安全地共享和发送大量数据。Community Health Systems 表示，Fortra 最近向其通报了一起导致未经授权泄露患者数据的安全事故。</p>
+<p class="translated">“由于 Fortra 经历的安全漏洞，Fortra 的攻击者暴露了该公司子公司某些患者的受保护健康信息和个人信息，”根据社区卫生系统的文件，这是由<a href="https://web.archive.org/web/20230407072138/https://www.databreaches.net/community-health-systems-estimates-1-million-patients-impacted-by-vendors-goanywhere-breach/" target="_blank" rel="noopener">DataBreaches.net</a>首先发现的。这家医疗保健巨头补充说，它将提供身份盗窃保护服务，并通知所有信息被暴露的受影响个人，但表示其提供的患者护理没有受到实质性干扰。</p>
+<p class="translated">CHS 尚未透露哪些类型的数据被曝光，一位发言人也尚未回应 TechCrunch 的问题。这是 CHS 近年来第二起已知的<a href="https://web.archive.org/web/20230407072138/https://techcrunch.com/2014/08/18/chinese-hackers-steal-personal-data-from-4-5m-community-health-systems-patients/">泄露患者数据</a>事件。</p>
+<p class="translated">据报道，与俄罗斯有关的勒索软件团伙<a href="https://web.archive.org/web/20230407072138/https://techcrunch.com/2021/06/23/clop-ransomware-gang-doxes-two-new-victims-days-after-police-raids/"> Clop </a>已经对在新的黑客活动中利用新的零时差负责，并声称已经攻破了一百多个使用 Fortra 文件传输技术的组织——包括 CHS。</p>
+<p class="translated">虽然 CHS 很快站出来成为受害者，但 Clop 的说法表明，可能还有几十个受影响的组织——如果你是成千上万 GoAnywhere 用户中的一员，你的公司可能也在其中。令人欣慰的是，安全专家分享了一些关于零日的信息，以及你可以做些什么来防范它。</p>
+<h2 class="translated">什么是 GoAnywhere 漏洞？</h2>
+<p class="translated">Fortra 的 GoAnywhere 软件中的零日漏洞的细节——被追踪为<a href="https://web.archive.org/web/20230407072138/https://nvd.nist.gov/vuln/detail/CVE-2023-0669" target="_blank" rel="noopener">CVE-2023-0669</a>——首先由安全记者 Brian Krebs 在 2 月 2 日标记。在<a href="https://web.archive.org/web/20230407072138/https://infosec.exchange/@briankrebs/109795710941843934" target="_blank" rel="noopener">乳齿象</a>上的一篇帖子中，Krebs 分享了 Fortra 前一天发布的安全建议的全文，但无法从其公共网站上获得。相反，用户必须创建一个 Fortra 帐户才能访问漏洞报告，此举受到了网络安全专家的严厉批评。</p>
+<p class="translated">“在 MFT 的 GoAnywhere 发现了一个零日远程代码注入漏洞，”Fortra 在其隐藏的公告中说。此漏洞的攻击媒介需要访问应用程序的管理控制台，在大多数情况下，只能通过 VPN 或允许列表中的 IP 地址(在云环境中运行时，如 Azure 或 AWS)从私有公司网络内部进行访问</p>
+<p class="translated">在 2 月 7 日发表的一份关于该漏洞的<a href="https://web.archive.org/web/20230407072138/https://attackerkb.com/topics/mg883Nbeva/cve-2023-0669/rapid7-analysis?utm_source=rapid7site&amp;utm_medium=referral&amp;utm_campaign=etr_anywheremft" target="_blank" rel="noopener">技术分析</a>中，网络安全公司 Rapid7 描述了该漏洞的可利用性——以及对攻击者的价值——为“非常高”，考虑到公司通过 GoAnywhere 发送的数据的敏感性。</p>
+<p class="translated">安全研究人员很快将该漏洞与影响 Accellion 现已停产的遗留文件传输设备(FTA)的早期零日漏洞相提并论，该设备与 GoAnywhere 一样，允许组织安全地共享敏感数据集。Clop 勒索软件团伙被发现在 2020 年滥用 Accellion 漏洞<a href="https://web.archive.org/web/20230407072138/https://techcrunch.com/2021/07/08/the-accellion-data-breach-continues-to-get-messier/">攻击许多组织</a>，包括 Qualys、Shell、科罗拉多大学、Kroger 和摩根士丹利。</p>
+<p class="translated">现在<a href="https://web.archive.org/web/20230407072138/https://techcrunch.com/2021/06/23/clop-ransomware-gang-doxes-two-new-victims-days-after-police-raids/"> Clop 勒索软件团伙</a>——最近因<a href="https://web.archive.org/web/20230407072138/https://techcrunch.com/2023/02/07/clop-ransomware-linux-flaw/">其新的 Linux 变种</a>而成为头条新闻——告诉<a href="https://web.archive.org/web/20230407072138/https://www.bleepingcomputer.com/news/security/clop-ransomware-claims-it-breached-130-orgs-using-goanywhere-zero-day/" target="_blank" rel="noopener">哔哔声计算机</a>它已经利用 GoAnywhere 漏洞从 130 多个组织窃取数据。Clop 并没有为它的说法提供证据，在撰写本文时，Clop 的黑暗网络泄露网站没有提到 Fortra 或 GoAnywhere。</p>
+<p class="translated">Fortra 没有回应 TechCrunch 的问题。</p>
+<h2 class="translated">我应该担心吗？</h2>
+<p class="translated">对 GoAnywhere 漏洞的可利用性的担忧并没有被夸大。</p>
+<p class="translated">网络安全公司女猎手上周<a href="https://web.archive.org/web/20230407072138/https://www.huntress.com/blog/investigating-intrusions-from-intriguing-exploits" target="_blank" rel="noopener">报告称</a>调查了一起涉及利用 GoAnywhere zero-day 入侵客户网络的事件。女猎手将此次入侵与一个说俄语的威胁行为者联系起来，称之为“沉默”，该行为者与另一个被称为 TA505 的组织有联系，ta 505 是一个犯罪黑客组织，至少从 2016 年开始活跃，以涉及部署 Clop 勒索软件的有针对性的活动而闻名。</p>
+<p class="translated">“根据观察到的行动和之前的报告，我们可以有一定把握地得出结论，女猎手观察到的活动旨在部署勒索软件，出于同样的目的，可能会对 MFT 的 GoAnywhere 进行额外的机会主义利用，”女猎手威胁情报经理乔·斯洛维克说。</p>
+<p class="translated">女猎手表示，部分由于该漏洞的简单性，它预计会看到“更广泛的活动”,因为 GoAnywhere zero-day 的漏洞正在被积极利用。</p>
+<h2 class="translated">可用的安全补丁</h2>
+<p class="translated">Fortra <a href="https://web.archive.org/web/20230407072138/https://hstechdocs.helpsystems.com/releasenotes/Content/_ProductPages/GoAnywhere/GAMFT.htm" target="_blank" rel="noopener">于 2 月 7 日发布了紧急补丁</a>—7 . 1 . 2 版，并敦促所有 GoAnywhere 客户尽快应用该补丁。“特别是对于运行暴露在互联网上的管理门户的客户，我们认为这是一个紧迫的问题，”该公司表示。</p>
+<p class="translated">与此同时，美国网络安全机构 CISA 将 GoAnywhere 漏洞添加到其已知被利用漏洞的公开目录中，并命令 T2 所有联邦民事行政部门机构在 3 月 3 日之前修补他们的系统。</p>
+
+			</div>
+
+			</div>    
+</body>
+</html>

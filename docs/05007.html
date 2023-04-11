@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Google Cloud now lets you suspend and resume VMs | TechCrunch</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">Google Cloud 现在允许您暂停和恢复虚拟机| TechCrunch</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2022/03/23/generaly-availability-google-cloud-now-lets-you-suspend-vms/">https://web.archive.org/web/https://techcrunch.com/2022/03/23/generaly-availability-google-cloud-now-lets-you-suspend-vms/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">谷歌云今天<a href="https://web.archive.org/web/20230323170909/https://cloud.google.com/blog/products/compute/save-by-suspending-vms-on-google-compute-engine" target="_blank" rel="noopener">发布了</a>面向虚拟机的暂停/恢复功能。在几年前作为 alpha 版本推出这个特性之前，开发人员唯一的选择就是停止和启动实例。谷歌称，使用<a href="https://web.archive.org/web/20230323170909/https://cloud.google.com/compute/docs/instances/suspend-resume-instance" target="_blank" rel="noopener">暂停/恢复</a>，这种体验更类似于合上和打开你笔记本电脑的盖子。</p>
+<p class="translated">当实例被挂起时，您不需要为它通常使用的内核和 RAM 付费。相反，您只需支付实例内存的存储成本。谷歌指出，操作系统许可也可能会减少。</p>
+<p class="translated">其他云也提供类似的功能，尽管谷歌辩称，因为它发送一个标准的 ACPI S3 信号——这是你的操作系统发送给你的台式机或笔记本电脑的信号，让它进入睡眠状态并暂停到 RAM——它的解决方案兼容更广泛的操作系统映像。事实上，它鼓励开发人员尝试使用未记录的定制操作系统映像，因为它们也可以开箱即用。</p>
+<p class="translated">谷歌还认为，它的解决方案是不同的，因为当虚拟机挂起时，映像的存储是动态提供的，并且独立于引导磁盘。这意味着您不必担心启动磁盘空间不足，并且挂起的实例消耗的存储空间更少。暂停时，实例的 IP 地址保持不变，一旦实例恢复，内存只需从存储移回实例内存，循环继续。</p>
+<p class="translated">但是，您最多只能将映像暂停 60 天。之后就自动终止了。值得注意的是，挂起/恢复也不适用于 GPU 实例、内存超过 120 GB 的实例、E2 实例和<a href="https://web.archive.org/web/20230323170909/https://cloud.google.com/blog/products/identity-security/introducing-google-cloud-confidential-computing-with-confidential-vms" target="_blank" rel="noopener">机密虚拟机</a>。可抢占的实例可以被挂起，但是存在它们在挂起过程中被终止的风险。</p>
+<p class="translated">但这里的优势不仅仅是节约成本。像这样的系统还意味着您可以保持一些实例处于备用状态，以便在需要时进行快速水平扩展。毕竟，配置新的虚拟机可能需要一段时间。如果这是您的使用案例，无服务器可能是未来的发展方向，但这是一个长期的项目，同时像这样的系统可以提供帮助。</p>
+<p class="translated">一些公司也在他们的开发者环境中使用挂起/恢复，这些环境通常不需要 24/7 运行。BigCommerce 工程经理 Aaron Humerickhouse 解释说:“利用计算引擎的挂起和恢复功能，BigCommerce 降低了我们计算引擎驱动的开发环境的运营成本。“BigCommerce 允许每个工程师定制其环境的‘工作时间’，这将在每个工作日结束时触发暂停，并在第二天开始时恢复。这使得我们每个环境的虚拟机实例使用时间平均从每周 168 小时减少到每周 60 小时，使我们每月节省数千美元。我们预计，随着工程组织的发展，这些成本效益的节约只会增加。”</p><p class="piano-inline-promo"/>
+			</div>
+
+			</div>    
+</body>
+</html>

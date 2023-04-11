@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Autonomous robots used in hundreds of hospitals at risk of remote hijacks • TechCrunch</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">数百家医院使用的自主机器人面临远程劫持的风险 TechCrunch</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2022/04/12/aethon-robots-hospitals-hijacks/">https://web.archive.org/web/https://techcrunch.com/2022/04/12/aethon-robots-hospitals-hijacks/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">十年前，著名的安全研究员巴纳拜·杰克在舞台上当着数百人的面无线入侵了一台医院的胰岛素泵，以展示它是多么容易被攻破，从而输送致命剂量的药物。在过去的几年里，医疗设备的安全性已经变得越来越好，尽管偶尔会出现<a href="https://web.archive.org/web/20230104193246/https://techcrunch.com/2019/07/09/flaws-anesthesia-respiratory-devices-tampering/">的高调打嗝</a>。但是，研究人员现在正在较新的医院技术中发现漏洞，这些技术在十年前并不普遍。</p>
+<p class="translated">进入自主医院机器人，这种被认为是友好的自控数字机器可以在医院园区内运输药物、床单、食物、药物和实验室标本。这些机器人，如机器人制造商 Aethon 制造的机器人，配备了运输关键货物的空间和进入医院限制区域和乘坐电梯的安全通道，同时降低了劳动力成本。</p>
+<p class="translated">但是，专注于保护医院和医疗保健系统的网络安全初创公司 Cynerio 的研究人员在 Aethon 机器人中发现了一组五个从未见过的漏洞，他们说这些漏洞允许恶意黑客远程劫持和控制这些自主机器人，在某些情况下还可以通过互联网进行控制。</p>
+<p class="translated">这五个漏洞，Cynerio 统称为 JekyllBot:5，不是与机器人本身有关，而是与用于与穿过医院和酒店走廊的机器人通信和控制机器人的基础服务器有关。这些漏洞包括允许黑客创建具有高级访问权限的新用户，以便登录并远程控制机器人，进入受限区域，使用机器人的内置摄像头窥探病人或客人，或者以其他方式造成混乱。</p>
+<p class="translated">Aethon 漏洞的首席研究员 Asher Brass 警告说，这些漏洞需要“非常低的利用技能”</p>
+<p/><div id="attachment_2298553" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2298553" decoding="async" loading="lazy" class="breakout wp-image-2298553 size-full" src="../Images/57d5cfef7a250c0dbac522529ad34925.png" alt="" srcset="https://web.archive.org/web/20230104193246im_/https://techcrunch.com/wp-content/uploads/2022/04/robot-moving-aethon-1.jpg 1109w, https://web.archive.org/web/20230104193246im_/https://techcrunch.com/wp-content/uploads/2022/04/robot-moving-aethon-1.jpg?resize=150,84 150w, https://web.archive.org/web/20230104193246im_/https://techcrunch.com/wp-content/uploads/2022/04/robot-moving-aethon-1.jpg?resize=300,169 300w, https://web.archive.org/web/20230104193246im_/https://techcrunch.com/wp-content/uploads/2022/04/robot-moving-aethon-1.jpg?resize=768,432 768w, https://web.archive.org/web/20230104193246im_/https://techcrunch.com/wp-content/uploads/2022/04/robot-moving-aethon-1.jpg?resize=680,383 680w, https://web.archive.org/web/20230104193246im_/https://techcrunch.com/wp-content/uploads/2022/04/robot-moving-aethon-1.jpg?resize=50,28 50w" sizes="(max-width: 1109px) 100vw, 1109px" data-original-src="https://web.archive.org/web/20230104193246im_/https://techcrunch.com/wp-content/uploads/2022/04/robot-moving-aethon-1.jpg"/><p id="caption-attachment-2298553" class="wp-caption-text translated">Aethon 拖船机器人上的一个摄像头截图。<strong>图片来源:</strong> Cynerio</p></div>
+<p class="translated">Cynerio 表示，基础服务器有一个可以从医院网络内部访问的网络界面，允许“客人”用户查看实时机器人摄像头反馈以及他们当天即将到来的日程和任务，而无需密码。但是，尽管机器人的功能受到“管理员”帐户的保护，研究人员表示，网络界面中的漏洞可能允许黑客在不需要管理员密码登录的情况下与机器人互动。</p>
+<p class="translated">研究人员说，这五个 bug 中的一个在网络界面中使用操纵杆式控制器对机器人进行远程控制，同时利用另一个 bug 与门锁进行交互，呼叫和乘坐电梯，以及打开和关闭药物抽屉。</p>
+<p class="translated">在大多数情况下，如果对机器人基础服务器的访问仅限于本地网络，仅限于登录的员工，那么潜在的风险是有限的。研究人员表示，对于医院、酒店或任何其他使用这些机器人的地方来说，风险要大得多，因为这些机器人有一个连接到互联网的基础服务器，因为这些漏洞可以从互联网上的任何地方触发。</p>
+<p class="translated">Cynerio 说，他们在医院以及为退伍军人提供护理的设施中发现了接触互联网的机器人的证据。Aethon 在全球数百家医院推销其机器人，其中许多在美国，有数千个机器人。</p>
+<p class="translated">在 Cynerio 提醒该公司注意这些问题后，Aethon 发布的一批软件和固件更新中修复了这些漏洞。据说 Aethon 已经限制了暴露在互联网上的服务器，以隔离机器人免受潜在的远程攻击，并修复了其他影响基站的网络漏洞。</p>
+<p class="translated">在给 TechCrunch 的一份声明中，ST Engineering Aethon 的首席执行官彼得·塞夫(Peter Seiff)确认了这些漏洞，但拒绝回答我们的问题，例如在软件更新后，其客户的自主机器人有多少比例已经被修补。</p>
+<p class="translated"><strong>阅读更多:</strong></p>
+
+			</div>
+
+			</div>    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>How to run data on Kubernetes: 6 starting principles | TechCrunch</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">如何在 Kubernetes 上运行数据:6 条起步原则| TechCrunch</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2022/11/25/how-to-run-data-on-kubernetes-6-starting-principles/?utm_source=Telegram&amp;utm_medium=iXNews&amp;utm_campaign=PerspectiveIX.com">https://web.archive.org/web/https://techcrunch.com/2022/11/25/how-to-run-data-on-kubernetes-6-starting-principles/?utm_source=Telegram&amp;utm_medium=iXNews&amp;utm_campaign=PerspectiveIX.com</a></blockquote><div><div class="article-content">
+				<div class="article__contributor-byline-wrapper">
+<div class="article__contributor-byline">
+	<div class="contributor-byline__contributor">
+		<p class="byline__author translated"><span class="byline__author-name">西尔万·卡拉什</span><span class="byline__author-title">撰稿人</span></p>
+
+				
+			</div>
+
+		<div class="contributor-byline__bio"><p class="translated">西尔万·卡拉什是</p><a href="https://web.archive.org/web/20230401160122/http://www.holberton.us/">Holberton</a><p class="translated">，一家在 10 多个国家培训数字人才的教育技术公司。作为一名企业家和软件工程师，他已经在科技行业工作了十多年。作为带领 SlideShare 被 LinkedIn 收购的团队的一员，他为 CIO 和 VentureBeat 写过文章。</p></div>
+	
+		<div class="contributor-byline__more-articles">
+		<span class="more-articles-title">More posts by this contributor</span>
+		
+	</div>
+	</div>
+</div><p id="speakable-summary" class="translated"><span class="featured__span-first-words"> Kubernetes 正在迅速成为行业标准，根据一项调查，多达 94%的组织在容器编排平台上部署他们的服务和应用。公司在 Kubernetes 上部署的一个关键原因是标准化，这让高级用户的生产率提高了一倍。</span></p>
+<p class="translated">基于 Kubernetes 的标准化使组织能够在任何地方部署任何工作负载。但是有一个缺失:该技术假设工作负载是短暂的，这意味着只有无状态的工作负载可以安全地部署在 Kubernetes 上。然而，该社区最近改变了范式，带来了 StatefulSets 和 Storage Classes 等特性，使得在 Kubernetes 上使用数据成为可能。</p>
+<p class="translated">虽然在 Kubernetes 上运行有状态的工作负载是可能的，但仍然具有挑战性。在这篇文章中，我提供了实现它的方法以及为什么它是值得的。</p>
+<h2 class="translated">循序渐进地做</h2>
+<p class="translated">Kubernetes 正在变得像 Linux 一样流行，事实上是以分布式方式在任何地方运行任何应用程序的方式。使用 Kubernetes 需要学习很多技术概念和词汇。例如，新来者可能会与许多 Kubernetes 逻辑单元(如容器、pod、节点和集群)发生冲突。</p>
+<p class="translated">如果您还没有在生产中运行 Kubernetes，不要直接进入数据工作负载。相反，应该从移动无状态的应用程序开始，以避免在出现问题时丢失数据。</p>
+<p>	</p><div class="article-block block--pullout block--right">
+		<blockquote class="translated">如果找不到符合你需求的运营商，也不用担心，因为大部分都是开源的。</blockquote>
+	</div>
+	
+<h2 class="translated">理解局限性和特殊性</h2>
+<p class="translated">一旦熟悉了 Kubernetes 的一般概念，就可以深入了解有状态概念的细节。例如，因为应用程序可能有不同的存储需求，如性能或容量要求，所以您必须提供正确的底层存储系统。</p>
+<p class="translated">在 Kubernetes 中，业界通常称之为存储“配置文件”的称为存储类。它们提供了一种方法来描述 Kubernetes 集群可以访问的不同类型的类。存储类别可以具有不同的服务质量级别，例如每 GiB 每秒的 I/O 操作、备份策略或任意策略，例如绑定模式和允许的拓扑。</p>
+<p class="translated">另一个需要理解的关键组件是 StatefulSet。它是用于管理有状态应用程序的 Kubernetes API 对象，提供了如下关键特性:</p>
+<ul>
+<li class="translated">稳定、唯一的网络标识符，让您跟踪卷，并允许您随意分离和重新连接它们。</li>
+<li class="translated">稳定持久的存储，确保您的数据安全。</li>
+<li class="translated">有序、优雅的部署和扩展，这是许多第 2 天操作所必需的。</li>
+</ul>
+<p class="translated">虽然 StatefulSet 已经成功地替代了臭名昭著的 PetSet(现在已被否决)，但它仍然不完善，有局限性。例如，StatefulSet 控制器<a href="https://web.archive.org/web/20230401160122/https://github.com/kubernetes/kubernetes/issues/68737" target="_blank" rel="noopener">没有对卷(PVC)大小调整</a>的内置支持，如果您的应用程序数据集的大小即将超过当前分配的存储容量，这将是一个重大挑战。有<a href="https://web.archive.org/web/20230401160122/https://www.plural.sh/blog/kubernetes-statefulsets-are-broken/" target="_blank" rel="noopener">的变通办法</a>，但是必须提前理解这些限制，以便工程团队知道如何处理它们。</p>			</div>
+
+			</div>    
+</body>
+</html>

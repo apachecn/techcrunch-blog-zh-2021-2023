@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>TikTok's in-app browser could be keylogging, warns analysis</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">分析警告说，抖音的应用内浏览器可能会被键盘记录</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2022/08/19/tiktok-fb-in-app-browser-tracking-analysis/">https://web.archive.org/web/https://techcrunch.com/2022/08/19/tiktok-fb-in-app-browser-tracking-analysis/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">“小心应用内浏览器”对于任何注重隐私的移动应用用户来说都是一条很好的经验法则——因为一款应用有可能利用它对用户注意力的控制，通过它也控制的浏览器软件窥探你在看什么。但是，在开发者 Felix Krause 的独立隐私研究发现社交网络的 iOS 应用程序注入代码，可以使其监控所有键盘输入和点击之后，抖音的应用内浏览器的行为引起了关注。又名键盘记录。</p>
+<p class="translated">“抖音 iOS 订阅了抖音应用内呈现的第三方网站上发生的每一次击键(文本输入)。这可能包括密码、信用卡信息和其他敏感的用户数据，”克劳斯在<a href="https://web.archive.org/web/20230324175251/https://krausefx.com/blog/announcing-inappbrowsercom-see-what-javascript-commands-get-executed-in-an-in-app-browser" target="_blank" rel="noopener">的博客文章</a>中警告说，详细介绍了调查结果。“我们不知道抖音使用订阅的目的，但从技术角度来看，<strong>这相当于在第三方网站上安装了一个键盘记录器</strong>。”[强调他的]</p>
+<p class="translated">在上周发布了<a href="https://web.archive.org/web/20230324175251/https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser" target="_blank" rel="noopener">一份报告</a>之后——该报告关注的是 Meta 的脸书和 Instagram iOS 应用程序跟踪其应用内浏览器用户的潜力——克劳斯随后推出了一款名为<a href="https://web.archive.org/web/20230324175251/https://inappbrowser.com/" target="_blank" rel="noopener">InAppBrowser.com</a>的工具，通过列出应用程序渲染页面时执行的 JavaScript 命令，让移动应用程序用户获得应用内浏览器注入的代码细节。(注意:他警告说，该工具不一定会列出所有执行的 JavaScript 命令，也不能跟踪应用程序可能正在使用本机代码执行的操作——所以充其量只能提供潜在粗略活动的一瞥。)</p><p class="piano-inline-promo"/>
+<p class="translated">克劳斯用这个工具对一些主要的应用程序做了一个简短的比较分析，这似乎把抖音放在了关注应用程序内浏览器行为的首位——考虑到它已经被确定订阅的输入范围；事实上，它没有为用户提供使用默认移动浏览器(而不是其自己的应用内浏览器)来打开网络链接的选项。后者意味着，如果你使用抖音的应用程序查看链接，就没有办法避免它的跟踪代码被加载——避免这种隐私风险的唯一选择是完全退出其应用程序，使用移动浏览器直接加载链接(如果你不能复制粘贴链接，你就必须记住 URL 才能做到这一点)。</p>
+<p class="translated">克劳斯谨慎地指出，仅仅因为他发现抖音订阅了用户在第三方网站上通过其应用内浏览器查看的每一次按键，并不一定意味着它在利用这种访问做“任何恶意的事情”——正如他指出的那样,<span>外人没有办法知道收集的是什么类型的数据，或者这些数据是如何被转移或使用的。但是，很明显，这种行为本身给抖音用户带来了问题和隐私风险。</span></p>
+<p class="translated">我们就抖音向第三方网站注入跟踪代码一事联系了该公司，并将根据任何回应更新这份报告。</p>
+<p class="translated"><strong>更新:</strong>一位公司发言人发来了这份声明:</p>
+<blockquote><p class="translated">该报告关于抖音的结论是不正确的，具有误导性。研究人员明确表示，JavaScript 代码并不意味着我们的应用程序在做任何恶意的事情，并承认他们没有办法知道我们的应用程序内浏览器收集了什么样的数据。与报告的说法相反，我们不会通过该代码收集击键或文本输入，该代码仅用于调试、故障排除和性能监控。</p></blockquote>
+<p class="translated">抖音认为，克劳斯识别的“按键”和“按键”输入是常见的输入——声称仅根据研究中强调的代码就对它们的使用做出假设是不正确的。</p>
+<p class="translated">为了支持这一点，发言人指出了一些来自 GitHub 的非抖音<a href="https://web.archive.org/web/20230324175251/https://github.com/GoogleChrome/web-vitals/blob/main/src/getLCP.ts" target="_blank" rel="noopener" data-saferedirecturl="https://www.google.com/url?q=https://github.com/GoogleChrome/web-vitals/blob/main/src/getLCP.ts&amp;source=gmail&amp;ust=1660998756039000&amp;usg=AOvVaw0O-UhpuVcC8ks-Fnb_UEBP">的相同代码，他们认为这些代码将触发完全相同的响应，该响应被该研究引用为不当数据收集的证据，但却被用来触发一个名为“停止监听”的命令，他们说该命令将专门阻止应用程序捕获输入的内容。</a></p>
+<p class="translated">他们进一步声称，该研究强调的 JavaScript 代码纯粹用于应用内浏览器的调试、故障排除和性能监控，以优化用户体验，例如检查页面加载速度或是否崩溃。并表示有问题的 JavaScript 也是其使用的 SDK 的一部分——进一步声称，仅仅因为某些代码存在并不意味着该公司正在使用它。这位发言人还强调了允许应用程序访问用户设备上某些类别的信息(也就是“调用”)与根据应用程序商店政策收集或处理数据之间的区别——这表明许多与相关信息类别相关的元素可能会在设备上进行本地分析，而信息本身不会被抖音收集。</p>
+<p class="translated">抖音的发言人还告诉我们，它没有向用户提供不使用应用内浏览器的选项，因为这需要将他们引导到应用外，他们认为这会带来笨重、不那么流畅的体验</p>
+<p class="translated">他们还重申了之前抖音公开否认参与击键记录(即捕获内容)的说法，但暗示它可能会使用击键信息来检测不寻常的模式或节奏，如每秒钟键入的每个字母恰好是 1 个键，以帮助防止虚假登录、垃圾邮件类评论或其他可能威胁其平台完整性的行为。</p>
+<p class="translated">抖音的发言人继续表示，它收集数据的水平类似于其他应用程序，这些应用程序也收集用户在应用程序中搜索的信息，以便能够推荐相关内容和个性化服务。</p>
+<p class="translated">他们证实，在该应用程序中浏览网页内容的用户会受到类似个性化的跟踪——例如选择相关视频显示在他们的 For You feed 中。他们进一步指出，当这些第三方公司选择与抖音分享这些数据时，该公司还可能在其他地方收集用户活动数据，如广告商的应用程序和网站。</p>
+<p class="translated">克劳斯还发现，元拥有的应用程序 Instagram、脸书和 FB Messenger 正在修改通过其应用内浏览器加载的第三方网站——用他的话说，是“潜在危险”的命令——我们也接触了这家科技巨头，要求对这些发现做出回应。</p>
+<p class="translated">在欧盟，隐私和数据保护受到包括《一般数据保护条例》( GDPR)和《电子隐私指令》在内的法律的监管，因此在缺乏适当法律基础的情况下对该地区用户进行的任何跟踪都可能导致监管制裁。</p>
+<p class="translated">这两个社交媒体巨头近年来已经受到了欧盟关于隐私、数据和消费者保护问题的各种程序、调查和强制执行——一些调查正在进行中，一些重大决定即将做出。</p>
+<p class="translated"><strong>更新:</strong>爱尔兰数据保护委员会是欧洲 GDPR 旗下 Meta 和抖音的主要数据保护监管机构，该委员会告诉 TechCrunch，在上周媒体报道 JavaScript 问题后，它已要求与 Meta 会面。该公司还表示，将在这个问题上与抖音进行接触。</p>
+
+<p class="translated">克劳斯警告说，公众对 iOS 上应用内浏览器 JavaScript 跟踪代码注入的审查很可能会鼓励不良行为者升级他们的软件，使外部研究人员无法检测到这些代码——通过在特定框架和内容世界(又名 WKContentWorld)的“<a href="https://web.archive.org/web/20230324175251/https://developer.apple.com/documentation/webkit/wkcontentworld" target="_blank" rel="noopener">上下文中运行他们的 JavaScript 代码，这是苹果自 iOS 14.3 以来提供的；引入这一条款作为反指纹措施，这样网站运营商就无法干扰浏览器插件的 JavaScript 代码(但在跟踪混淆的背景下，这种技术显然是一把双刃剑)——辩称因此“找到一种解决方案，结束使用定制应用内浏览器显示第三方内容，比以往任何时候都更重要”。</a></p>
+<p class="translated">尽管在 iOS 上运行的移动应用程序中发现了一些令人担忧的行为，但苹果的平台通常被吹捧为比谷歌风格的移动操作系统替代品 Android 更加隐私安全——值得注意的是，克劳斯发现，遵循苹果建议使用 Safari(或 SFSafariViewController)查看外部网站的应用程序是“安全的”——包括 Gmail、Twitter、 WhatsApp 和许多其他公司——正如他所说，Cupertino 推荐的方法意味着应用程序没有办法将任何代码注入网站，包括通过部署上述孤立的 JavaScript 系统(否则可能会被用来混淆跟踪代码)。</p>
+
+
+
+			</div>
+
+			</div>    
+</body>
+</html>

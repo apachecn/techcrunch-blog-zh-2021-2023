@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Implement differential privacy to power up data sharing and cooperation | TechCrunch</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">实施差别隐私以加强数据共享和合作| TechCrunch</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2022/02/24/implement-differential-privacy-to-power-up-data-sharing-and-cooperation/">https://web.archive.org/web/https://techcrunch.com/2022/02/24/implement-differential-privacy-to-power-up-data-sharing-and-cooperation/</a></blockquote><div><header class="article__header ">
+	<p class="article__title-wrapper">
+						</p><h1 class="article__title translated">实施差异隐私以促进数据共享和合作</h1>
+		
+
+			
+	
+			
+	</header>
+
+			<div class="article-content">
+				<div class="article__contributor-byline-wrapper">
+<div class="article__contributor-byline">
+	<div class="contributor-byline__contributor">
+		<p class="byline__author translated"><span class="byline__author-name">马克西姆阿戈斯蒂尼</span><span class="byline__author-title">撰稿人</span></p>
+
+				
+			</div>
+
+		<div class="contributor-byline__bio"><p class="translated">马克西姆·阿戈斯蒂尼是</p><a href="https://web.archive.org/web/20230308152034/https://www.sarus.tech/">Sarus</a><p class="translated">，这是一家由 Y Combinator 支持的隐私公司，让组织利用机密数据进行分析和机器学习。</p></div>
+	
+	</div>
+
+<div class="article__contributor-byline">
+	
+
+		<div class="contributor-byline__bio"><p class="translated">天汇李立伟是</p><a href="https://web.archive.org/web/20230308152034/https://www.thedataincubator.com/">The Data Incubator</a><p class="translated">，为期八周的奖学金，帮助博士和博士后从学术界过渡到工业界。它被务实研究所收购了。此前，他在 Foursquare 负责货币化数据科学，并在谷歌、安德森·霍洛维茨、摩根大通和 D.E. Shaw 工作过。</p></div>
+	
+		<div class="contributor-byline__more-articles">
+		<span class="more-articles-title">More posts by this contributor</span>
+		
+	</div>
+	</div>
+</div><p id="speakable-summary" class="translated"><span class="featured__span-first-words">传统上，公司依靠数据屏蔽来保护数据隐私。基本想法是从每个记录中删除所有个人身份信息(PII)。然而，许多引人注目的事件表明，即使是理应解除身份的数据也可能泄露消费者隐私。</span></p>
+<p class="translated">1996 年，一名麻省理工学院的研究人员通过将健康记录与公共选民登记数据进行匹配，在一个据称被屏蔽的数据集中发现了时任马萨诸塞州州长的健康记录。2006 年，UT Austin 的研究人员在一个所谓的匿名数据集中重新识别了数千人观看的电影，网飞通过结合 IMDB 的数据将其公之于众。</p>
+<p class="translated">在 2022 年《自然》杂志的一篇文章中，研究人员使用人工智能对一个据称匿名的数据集中超过一半的手机记录进行指纹识别和重新识别。这些例子都强调了攻击者如何利用“辅助”信息来重新识别可能被屏蔽的数据。</p>
+<p class="translated">这些失败导致了<a href="https://web.archive.org/web/20230308152034/https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/dwork.pdf" target="_blank" rel="noopener">差分隐私</a>。不同于共享数据，公司会共享结合了随机噪声的数据处理结果。设置噪声级别是为了使输出不会告诉潜在的攻击者关于目标的任何有统计意义的信息:相同的输出可能来自有目标的数据库，也可能来自完全相同但没有目标的数据库。共享的数据处理结果不会泄露任何人的信息，因此保护了每个人的隐私。</p>
+<p>	</p><div class="article-block block--pullout block--right">
+		<blockquote class="translated">要实现差分隐私，不应该从零开始，因为任何实现错误对于隐私保证都可能是灾难性的。</blockquote>
+	</div>
+	
+<p class="translated">在早期，实施差别隐私是一个重大挑战。第一批应用程序主要来自拥有大型数据科学和工程团队的组织，如苹果、谷歌或微软。随着技术越来越成熟，成本越来越低，所有拥有现代数据基础架构的组织如何在实际应用中利用差异隐私？</p>
+<h2 class="translated">差异隐私适用于聚合和行级数据</h2>
+<p class="translated">当分析师无法访问数据时，通常使用差别隐私来生成差别隐私集合。敏感数据可通过 API 访问，该 API 仅输出保护隐私的噪声结果。该 API 可以对整个数据集执行聚合，从简单的 SQL 查询到复杂的机器学习训练任务。</p>
+<p/><div id="attachment_2276465" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2276465" decoding="async" class="breakout wp-image-2276465 size-full" src="../Images/1277435ee2682481ba9d1f51e54b1268.png" alt="A typical set-up for leveraging personal data with differential privacy guarantees" srcset="https://web.archive.org/web/20230308152034im_/https://techcrunch.com/wp-content/uploads/2022/02/TC-post-Illustration-2.jpg 956w, https://web.archive.org/web/20230308152034im_/https://techcrunch.com/wp-content/uploads/2022/02/TC-post-Illustration-2.jpg?resize=150,35 150w, https://web.archive.org/web/20230308152034im_/https://techcrunch.com/wp-content/uploads/2022/02/TC-post-Illustration-2.jpg?resize=300,71 300w, https://web.archive.org/web/20230308152034im_/https://techcrunch.com/wp-content/uploads/2022/02/TC-post-Illustration-2.jpg?resize=768,182 768w, https://web.archive.org/web/20230308152034im_/https://techcrunch.com/wp-content/uploads/2022/02/TC-post-Illustration-2.jpg?resize=680,161 680w, https://web.archive.org/web/20230308152034im_/https://techcrunch.com/wp-content/uploads/2022/02/TC-post-Illustration-2.jpg?resize=50,12 50w" sizes="(max-width: 956px) 100vw, 956px" data-original-src="https://web.archive.org/web/20230308152034im_/https://techcrunch.com/wp-content/uploads/2022/02/TC-post-Illustration-2.jpg"/><p id="caption-attachment-2276465" class="wp-caption-text translated">利用个人数据和不同隐私保证的典型设置。<strong>图片来源:</strong> Sarus</p></div>
+<p class="translated">这种设置的一个缺点是，与数据屏蔽技术不同，分析师不再通过查看单个记录来“感受数据”减轻这种限制的一种方法是提供差别私有合成数据，其中数据所有者产生模仿原始数据集的统计属性的假数据。</p>
+<p/>			</div>
+
+			</div>    
+</body>
+</html>

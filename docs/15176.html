@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>MarioGPT hints at a glorious AI-generated future where we will all play Nintendo forever | TechCrunch</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">MarioGPT 暗示了一个辉煌的人工智能生成的未来，我们都将永远玩任天堂</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2023/02/14/mariogpt-hints-at-a-glorious-ai-generated-future-where-we-will-all-play-nintendo-forever/">https://web.archive.org/web/https://techcrunch.com/2023/02/14/mariogpt-hints-at-a-glorious-ai-generated-future-where-we-will-all-play-nintendo-forever/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">世界上再多的马里奥也不为过。当然，你可能已经有一段时间没有玩 NES 游戏了，但可能是因为它们太熟悉了。如果我告诉你，研究人员已经发明了一种方法来生成无限的马里奥关卡，这样你就可以每天玩一个全新的关卡，直到太阳烧尽。</p>
+<p class="translated"><strong>更新</strong>:关卡生成器现在有了一个工作的网络应用程序，你可以在那里播放你的提示。<a href="https://web.archive.org/web/20230408173425/https://huggingface.co/spaces/multimodalart/mariogpt">去试试吧！</a></p>
+<p class="translated">哥本哈根 IT 大学的一个团队刚刚发布了一篇<a href="https://web.archive.org/web/20230408173425/https://arxiv.org/abs/2302.05981" target="_blank" rel="noopener">(发布前)论文</a>和<a href="https://web.archive.org/web/20230408173425/https://github.com/shyamsn97/mario-gpt" target="_blank" rel="noopener"> GitHub </a>页面，展示了一种编码和生成超级马里奥兄弟关卡的新方法，他们称之为 MarioGPT。(在雷德蒙的某个地方，一名律师啜饮着咖啡，开始打字。)</p>
+<p class="translated">MarioGPT 基于 GPT-2，而不是这些新奇的对话式人工智能。这些大型语言模型不仅擅长在这样的句子中接收单词，还擅长输出更多类似的单词——它们是通用的模式识别和复制机器。</p>
+<p class="translated">"老实说，我们只是挑选了较小的一个，看看它是否有效！"该论文的主要作者希亚姆·苏哈卡兰(Shyam Sudhakaran)在给 TechCrunch 的一封电子邮件中表示。“我认为对于一般的小数据集，GPT2 比 GPT3 更适合，同时也更轻量级，更容易训练。然而，在未来，随着更大的数据集和更复杂的提示，我们可能需要使用像 GPT3 这样更复杂的模型。”</p>
+<p class="translated">即使是一个非常大的 LLM 也不能理解马里奥等级，所以研究人员首先必须将它们作为文本进行渲染，制作出一种马里奥的矮人堡垒版本，老实说，我会玩:</p>
+<p/><div id="attachment_2485658" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2485658" decoding="async" class="size-full wp-image-2485658" src="../Images/4d9893f696b4a4d9056237fa89e9222c.png" alt="" srcset="https://web.archive.org/web/20230408173425im_/https://techcrunch.com/wp-content/uploads/2023/02/architecture.png 612w, https://web.archive.org/web/20230408173425im_/https://techcrunch.com/wp-content/uploads/2023/02/architecture.png?resize=150,135 150w, https://web.archive.org/web/20230408173425im_/https://techcrunch.com/wp-content/uploads/2023/02/architecture.png?resize=300,269 300w, https://web.archive.org/web/20230408173425im_/https://techcrunch.com/wp-content/uploads/2023/02/architecture.png?resize=50,45 50w" sizes="(max-width: 612px) 100vw, 612px" data-original-src="https://web.archive.org/web/20230408173425im_/https://techcrunch.com/wp-content/uploads/2023/02/architecture.png"/><p id="caption-attachment-2485658" class="wp-caption-text translated">每个单幅图块呈现为不同的角色。<strong>图片来源:</strong>哥本哈根 IT 大学</p></div>
+<p class="translated">想赚钱吗？终端里的马里奥。随便说说。</p>
+<p class="translated">一旦级别被表示为一系列普通字符，它就可以像任何其他字符系列一样被模型接受，无论是书面语言还是代码。一旦它理解了与特征相关的模式，它就能复制它们。</p><p class="piano-inline-promo"/>
+<p class="translated">它的输出包括一个用小写 x 表示的“路径”,本质上表明这个关卡在技术上是可以玩的。他们发现，在 250 个级别中，10 个级别中有 9 个能够由游戏软件代理 A*完成。</p>
+<p class="translated">当然，如果水位只是平坦的，偶尔有管道需要清理，那就不算成功。但是他们包含了一些函数来测量路径的简单程度，并将其与数据集中的级别进行比较。高度的新颖性和“有趣”的路径轨迹意味着可行的水平，不像现有的，但不要让玩家只是走过去。</p>
+<p class="translated">标记输入也使模型能够理解自然语言提示，如要求它建立一个“许多管道和许多敌人”或“许多街区，高海拔，没有敌人”的水平。</p>
+<p/><div id="attachment_2485741" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2485741" decoding="async" loading="lazy" class="size-full wp-image-2485741" src="../Images/1a6f5dde199b31390b03570fc62b6112.png" alt="" srcset="https://web.archive.org/web/20230408173425im_/https://techcrunch.com/wp-content/uploads/2023/02/prompt-samples.png 1617w, https://web.archive.org/web/20230408173425im_/https://techcrunch.com/wp-content/uploads/2023/02/prompt-samples.png?resize=150,150 150w, https://web.archive.org/web/20230408173425im_/https://techcrunch.com/wp-content/uploads/2023/02/prompt-samples.png?resize=300,300 300w, https://web.archive.org/web/20230408173425im_/https://techcrunch.com/wp-content/uploads/2023/02/prompt-samples.png?resize=768,769 768w, https://web.archive.org/web/20230408173425im_/https://techcrunch.com/wp-content/uploads/2023/02/prompt-samples.png?resize=680,680 680w, https://web.archive.org/web/20230408173425im_/https://techcrunch.com/wp-content/uploads/2023/02/prompt-samples.png?resize=1533,1536 1533w, https://web.archive.org/web/20230408173425im_/https://techcrunch.com/wp-content/uploads/2023/02/prompt-samples.png?resize=1198,1200 1198w, https://web.archive.org/web/20230408173425im_/https://techcrunch.com/wp-content/uploads/2023/02/prompt-samples.png?resize=32,32 32w, https://web.archive.org/web/20230408173425im_/https://techcrunch.com/wp-content/uploads/2023/02/prompt-samples.png?resize=50,50 50w, https://web.archive.org/web/20230408173425im_/https://techcrunch.com/wp-content/uploads/2023/02/prompt-samples.png?resize=64,64 64w, https://web.archive.org/web/20230408173425im_/https://techcrunch.com/wp-content/uploads/2023/02/prompt-samples.png?resize=96,96 96w, https://web.archive.org/web/20230408173425im_/https://techcrunch.com/wp-content/uploads/2023/02/prompt-samples.png?resize=128,128 128w" sizes="(max-width: 1024px) 100vw, 1024px" data-original-src="https://web.archive.org/web/20230408173425im_/https://techcrunch.com/wp-content/uploads/2023/02/prompt-samples.png"/><p id="caption-attachment-2485741" class="wp-caption-text translated">由文本提示创建的标高示例。<strong>图片来源:</strong>哥本哈根 IT 大学</p></div>
+<p class="translated">一个限制是，由于他们在视频游戏级别语料库中的源数据的编码方式，只有一个“敌人”符号，而不是 goombas、koopas 等各有一个。但是如果需要的话，这是可以改变的——需要证明的概念不仅仅是可以产生好的水平。(遗憾的是，由于没有在数据集中显示，水位目前也是不可能的。)</p>
+<p class="translated">"在未来的工作中，我们将探索一些更丰富的数据集！"Sudhakaran 说。</p>
+
+<p class="translated">巧合的是，NYU 游戏实验室的 Julian Togelius 和他的团队<a href="https://web.archive.org/web/20230408173425/https://arxiv.org/abs/2302.05817" target="_blank" rel="noopener">刚刚写了一篇论文</a>，展示了“推箱子”或推方块益智游戏的类似过程。原理是相似的，但是你可以在这里读到不同之处<a href="https://web.archive.org/web/20230408173425/https://twitter.com/togelius/status/1625322824884711425" target="_blank" rel="noopener">。</a></p>
+<p class="translated">这些方法适用于两种不同的类型，这表明它也适用于其他类似的复杂性——不太可能产生无限时空触发器，但人工智能驱动的 2D 声波也不是不可能的。</p>
+<p class="translated">应该说，这不是我们看到的第一个马里奥生成器，但其他人倾向于不依赖于生成型人工智能，而是依赖于从预先创建的瓷砖集和序列中组装关卡。所以你可能会得到一个新的序列，但它不会是一个接一个的，只是一个接一个的。</p>
+<p class="translated">作为 MarioGPT 的第一个版本，这纯粹是实验性的，有望避免任天堂的索隆式凝视，任天堂以打击涉及其属性的粉丝项目而闻名。当然，虽然《无限马里奥》听起来很有趣，但原版游戏的魅力在于它们手工制作的难度和主题——这不是那么容易重现的。</p>
+			</div>
+
+			</div>    
+</body>
+</html>

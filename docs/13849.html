@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>5 tips for dealing with Day 2 Kubernetes operational challenges | TechCrunch</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">应对第 2 天 Kubernetes 运营挑战的 5 个技巧| TechCrunch</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2022/12/30/5-tips-for-dealing-with-day-2-kubernetes-operations/">https://web.archive.org/web/https://techcrunch.com/2022/12/30/5-tips-for-dealing-with-day-2-kubernetes-operations/</a></blockquote><div><header class="article__header ">
+	<p class="article__title-wrapper">
+						</p><h1 class="article__title translated">应对第 2 天 Kubernetes 运营挑战的 5 个技巧</h1>
+		
+
+			
+	
+			
+	</header>
+
+			<div class="article-content">
+				<div class="article__contributor-byline-wrapper">
+<div class="article__contributor-byline">
+	<div class="contributor-byline__contributor">
+		<p class="byline__author translated"><span class="byline__author-name">卢卡斯·根特莱</span><span class="byline__author-title">撰稿人</span></p>
+
+				
+			</div>
+
+		
+	
+	</div>
+</div><p id="speakable-summary" class="translated"><span class="featured__span-first-words"> Kubernetes 是一款出色的</span>但复杂的软件，在投入生产时会带来重大的“第二天”挑战。</p>
+<p class="translated">Kubernetes 的新开发人员——大多数都是——在寻求维护和优化 Kubernetes 集群时面临着巨大的知识缺口。</p>
+<p class="translated">在这篇文章中，我将分享几种解决问题的方法。</p>
+<h2 class="translated">针对成本优化您的 Kubernetes 集群</h2>
+<p class="translated">随着 Kubernetes 的普及，应用程序和工程师访问集群的需求也在增长。然而，总是使用整个物理集群来实现这一目标既不可行也不经济。</p>
+<p class="translated">虚拟集群是降低成本的好方法。在一个有 100 名开发人员的场景中，我们计算出使用开源虚拟集群可以节省高达 78%的成本。</p>
+<p class="translated">利用虚拟集群和开源软件，如<a href="https://web.archive.org/web/20230224204758/https://pkg.go.dev/sigs.k8s.io/cluster-api-provider-nested/virtualcluster" target="_blank" rel="noopener"> VirtualCluster </a>或<a href="https://web.archive.org/web/20230224204758/https://github.com/loft-sh/vcluster" target="_blank" rel="noopener"> vcluster </a>，Kubernetes 运营商可以在一个物理集群中运行多个虚拟集群，从而提高每个虚拟集群的租用率。通过这种更具公共性的方法来利用计算资源，组织可以节省计算成本，而不是运营完全独立的 Kubernetes 集群。</p>
+<h2 class="translated">增加租户隔离</h2>
+<p>	</p><div class="article-block block--pullout block--right">
+		<blockquote class="translated">通过利用策略引擎，可以在您的云原生 Kubernetes 基础设施上实现软件安全防护。</blockquote>
+	</div>
+	
+<p class="translated">虚拟集群的另一个巨大优势是，它们与集群中的其他用户相隔离。这为每个用户提供了自己的工作空间，看起来和感觉上完全像一个物理 Kubernetes 集群。</p>
+<p class="translated">此外，与基于命名空间的多租户相比，虚拟集群支持更严格的多租户形式。基于名称空间的多租户的一个主要问题是它不能包含集群范围的资源。许多应用程序必须创建或至少访问集群范围的资源，如节点、集群角色、持久卷和存储类。</p>
+<p class="translated">虚拟集群还通过以下方式提高多租户集群的隔离性，从而提供安全优势:</p>
+<ul>
+<li class="translated">完全控制平面隔离。</li>
+<li class="translated">域名系统(DNS)隔离。</li>
+<li class="translated">在单个命名空间上创建的资源。</li>
+</ul>
+<p class="translated">寻求多租户应用解决方案的组织应该考虑将虚拟集群作为一种选择，该解决方案可以为其集群之间共享的资源提供更好的隔离。除了节省成本和易于部署之外，它们也比物理集群更易于管理。</p>
+<h2 class="translated">提供集成开发环境</h2></div>
+
+			</div>    
+</body>
+</html>

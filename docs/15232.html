@@ -1,0 +1,178 @@
+<html>
+<head>
+<title>Most sites claiming to catch AI-written text fail spectacularly | TechCrunch</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">大多数声称能捕捉人工智能文字的网站都失败了</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2023/02/16/most-sites-claiming-to-catch-ai-written-text-fail-spectacularly/">https://web.archive.org/web/https://techcrunch.com/2023/02/16/most-sites-claiming-to-catch-ai-written-text-fail-spectacularly/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">随着围绕生殖人工智能的热情日益高涨，批评者呼吁该技术的创造者采取措施减轻其潜在的有害影响。特别是，生成文本的人工智能得到了很多关注——这是有充分理由的。学生可以用它来剽窃，内容农场可以用它来发送垃圾邮件，坏演员可以用它来传播错误信息。</p>
+<p class="translated">几周前，OpenAI 屈服于压力，发布了一款试图区分人类书写文本和合成文本的<a href="https://web.archive.org/web/20230403115005/https://techcrunch.com/2023/01/31/openai-releases-tool-to-detect-ai-generated-text-including-from-chatgpt/">分类器</a>工具。但不是特别准确；OpenAI 估计它错过了 74%的人工智能生成的文本。</p>
+<p class="translated">在缺乏可靠的方法来识别来自人工智能的文本的情况下，探测器服务的家庭手工业已经兴起。由普林斯顿大学的一名学生开发的 ChatZero 声称使用“困惑”等标准来确定文本是否可能是人工智能写的。抄袭检测器<a href="https://web.archive.org/web/20230403115005/https://www.turnitin.com/blog/sneak-preview-of-turnitins-ai-writing-and-chatgpt-detection-capability" target="_blank" rel="noopener"> Turnitin </a>开发了自己的人工智能文本检测器。除此之外，谷歌搜索至少会产生六个其他应用程序，声称能够将人类生成的小麦与人工智能生成的谷壳分开，以此来折磨这个比喻。</p>
+<p class="translated">但是这些工具真的准确吗？赌注很高。在学术环境中，人们可以想象一个场景，其中漏检意味着及格和不及格之间的差别。根据一项调查，几乎一半的学生说他们用<a href="https://web.archive.org/web/20230403115005/https://techcrunch.com/tag/chatgpt/"> ChatGPT </a>进行家庭测试或测验，而超过一半的学生承认他们用它来写论文。</p>
+<p class="translated">为了查明今天的人工智能文本检测工具是否合格，我们利用人工智能初创公司 Anthropic 开发的一个名为 Claude 的类似 ChatGPT 的系统，创建了八个不同风格的写作样本。我们特意让克劳德生成了:</p>
+<ul>
+<li class="translated">中美洲百科全书条目</li>
+<li class="translated">鞋油的营销邮件</li>
+<li class="translated">一篇关于罗马衰落的大学论文</li>
+<li class="translated">一篇关于 2020 年美国总统大选的新闻文章</li>
+<li class="translated">律师助理职位的求职信</li>
+<li class="translated">一份软件工程师的简历</li>
+<li class="translated">一篇关于枪支管制的优点的论文的提纲</li>
+</ul>
+<p class="translated">虽然公认不是最彻底的方法，但我们希望保持简单——目标是评估人工智能文本检测器对来自单个人工智能系统(Claude)的文本的性能。我们测试了几个更受欢迎的检测器，即 OpenAI 自己的分类器、AI Writing Check、GPTZero、Copyleaks、GPT 雷达、CatchGPT 和 Originality.ai</p>
+<h2 class="translated">百科词条</h2>
+<p class="translated">克劳德的百科全书条目读起来像是《大英百科全书》中的内容，包含了关于古代中美洲文明的兴衰和持久影响的丰富细节。尽管有一两个不合理的地方，但思想在段落之间流动得很好，写作风格也符合你对学术出版物的期望:</p>
+<blockquote><p class="translated">中美洲是一个包括墨西哥南部和中美洲的地区。它是共享共同文化特征的前哥伦布社会的家园。中美洲最早的复杂社会出现在大约 3000 年前。</p>
+<p class="translated"><em>中美洲文化区以玉米种植和复杂文明的兴起为主导。中美洲文明建造了标志性的阶梯式金字塔神庙和其他纪念性建筑。许多这些文明有丰富的神话和宗教传统，以及复杂的历法和数学。</em></p>
+<p class="translated"><em>主要的中美洲文明包括奥尔梅克、特奥蒂瓦坎、玛雅、萨波特克、米斯特克、华斯特克、塔拉斯坎和阿兹特克，阿兹特克在 16 世纪早期被西班牙征服者埃尔南·科尔特斯遇到。这些前哥伦布时期的文明以建筑壮举，以及数学、天文学和历法的进步而闻名。他们也因发展复杂的市场交换网络和连接太平洋和大西洋海岸的贸易路线而闻名。</em></p>
+<p class="translated">征服阿兹特克帝国后，西班牙人在阿兹特克首都特诺奇蒂特兰的废墟上建立了墨西哥城。阿兹特克人的语言纳瓦特尔语至今仍是墨西哥使用最广泛的土著语言。中美洲的文化特征，如玉米种植、阶梯式金字塔建筑和纪念性雕塑，在征服后时期得以延续，并仍然存在于当代墨西哥文化中。</p></blockquote><p class="piano-inline-promo"/>
+<p class="translated">基于这些原因，我们预测文本会给探测器带来一些麻烦——事实也的确如此。在这些测试中，只有两个，GPTZero 和 Originality.ai，正确地将文本分类为人工智能生成的。其他人做得不够。OpenAI 的分类器最初没有足够的信心来得出答案，而 Originality.ai 只给了文本 4%的机会是人工智能创作的。不是最好的样子。</p>
+<p/><div id="attachment_2486656" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2486656" decoding="async" class="wp-image-2486656 size-large" src="../Images/bf100de867c635a252a0bffd36957460.png" alt="AI text classifier" srcset="https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/catch-gpt-encyclopedia.png 968w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/catch-gpt-encyclopedia.png?resize=150,35 150w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/catch-gpt-encyclopedia.png?resize=300,69 300w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/catch-gpt-encyclopedia.png?resize=768,178 768w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/catch-gpt-encyclopedia.png?resize=680,157 680w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/catch-gpt-encyclopedia.png?resize=50,12 50w" sizes="(max-width: 680px) 100vw, 680px" data-original-src="https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/catch-gpt-encyclopedia.png?w=680"/><p id="caption-attachment-2486656" class="wp-caption-text translated">CatchGPT 被人工智能生成的文本愚弄了。<strong>图片来源:</strong> TechCrunch</p></div>
+<ul>
+<li class="translated">OpenAI 分类器:分类不正确</li>
+<li class="translated">AI 写检查:分类不正确</li>
+<li class="translated"><strong> GPTZero:分类正确</strong></li>
+<li class="translated">Copyleaks:分类不正确</li>
+<li class="translated">GPT 雷达:分类不正确</li>
+<li class="translated">CatchGPT:分类不正确</li>
+<li class="translated">Originality.ai:分类不正确</li>
+</ul>
+<h2 class="translated">营销电子邮件</h2>
+<p class="translated">克劳德的社交媒体副本是真实和牵强细节的幽默融合，但没有明显的提示表明文本是人工智能生成的。它包括价格和行动号召，甚至—多么简洁！广告文案被预先警告:</p>
+<blockquote><p class="translated">主题:获得持久光泽</p>
+<p class="translated"><em>你的鞋子看起来是不是又暗又旧？使用超级闪亮鞋油，您可以让您的鞋子恢复光泽，像新的一样，并保护它们免受损坏和磨损。</em></p>
+<p class="translated"><em> Super Shine 由最高质量的蜡和染料制成，有多种中性和光泽颜色可供选择，可搭配任何鞋型或皮革。我们的鞋油配方独特，只需一次使用就能清洁、抛光和保护您的鞋子。调理油渗透皮革，从内部滋养皮革，而颜料覆盖磨损和划痕，保护蜡屏蔽密封光泽，排斥水和其他元素。</em></p>
+<p class="translated"><em>打造完美亮泽从未如此简单，只需用湿布擦去污垢，用软刷涂抹超级亮泽，然后抛光至闪亮亮泽。我们的抛光剂干燥后表面坚硬，所以你不会在手上或衣服上留下痕迹。因为积少成多，一个锡罐可以擦亮 100 双鞋。</em></p>
+<p class="translated">再也不要满足于毫无光泽的鞋子。想要令人钦佩的闪亮，选择超级闪亮——在你当地的零售商那里售价 9.99 美元</p></blockquote>
+<p/><div id="attachment_2487154" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2487154" decoding="async" loading="lazy" class="wp-image-2487154 size-large" src="../Images/bbe015ed79975fd08f42402c9e9dd84f.png" alt="Text generation classifier" srcset="https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/originality-marketing-email.png 1020w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/originality-marketing-email.png?resize=150,132 150w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/originality-marketing-email.png?resize=300,263 300w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/originality-marketing-email.png?resize=768,674 768w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/originality-marketing-email.png?resize=680,597 680w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/originality-marketing-email.png?resize=50,44 50w" sizes="(max-width: 680px) 100vw, 680px" data-original-src="https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/originality-marketing-email.png?w=680"/><p id="caption-attachment-2487154" class="wp-caption-text translated">原创性表现不佳。ai <strong>图片来源:</strong> TechCrunch</p></div>
+<p class="translated">令人难以置信的是，这个片段难倒了所有的探测器。但公平地说，它的长度比我们的百科全书条目还要短。检测器往往在文本样本越长、模式越明显的情况下表现得越好。</p>
+<ul>
+<li class="translated">OpenAI 分类器:分类不正确</li>
+<li class="translated">AI 写检查:分类不正确</li>
+<li class="translated">分类不正确</li>
+<li class="translated">Copyleaks:分类不正确</li>
+<li class="translated">GPT 雷达:分类不正确</li>
+<li class="translated">CatchGPT:分类不正确</li>
+<li class="translated">Originality.ai:分类不正确</li>
+</ul>
+<h2 class="translated">大学论文</h2>
+<p class="translated">由于技术限制，克劳德无法为我们写一篇非常长的大学论文，但好像是为了弥补这一点，人工智能将尽可能多的细节压缩在几个短段落中。当然，该样本具有典型的课堂论文的元素，包括论文陈述、结论(如果不是特别有力的话)和对历史事件的参考:</p>
+<blockquote><p class="translated">强大的罗马帝国:是什么导致了它的衰落？</p>
+<p class="translated">罗马帝国是历史上最伟大、持续时间最长的帝国之一。然而，到了公元 5 世纪，罗马帝国进入了衰亡期。罗马的衰落有几个主要原因:政治不稳定和腐败，野蛮人的入侵，经济衰退，以及对奴隶和战利品的过度依赖。</p>
+<p class="translated">在政治上，罗马帝国后期充满了内战、政变和争夺王位的竞争。这种持续的权力斗争耗尽了帝国的资源，并使其难以应对其他威胁。皇帝利用禁卫军夺取权力，但随后他们被暗杀，新的皇帝崛起，继续循环。</p>
+<p class="translated"><em>随着帝国的衰弱，入侵的野蛮部落看到了机会。公元 410 年，西哥特人洗劫了罗马，这对罗马帝国的威望是一个令人震惊的打击。后来，其他部落入侵并在帝国内获得领土，有时被授予土地以换取向罗马军队提供士兵。这些部落削弱了帝国，但他们也引进了新的习俗和文化。</em></p>
+<p class="translated"><em>在经济上，罗马有一个基于征服和战利品而非生产的体系。维持一个大帝国、大批士兵、盛大的场面和娱乐活动的成本相当高。一旦扩张放缓，新的征服带来的财富减少，不可持续的经济体系就会动摇。与此同时，奴隶们做了大量的劳动，也没有什么动力去改进农业技术或商业行为。</em></p>
+<p class="translated">总之，罗马帝国的衰落有很多原因，包括政治不稳定、野蛮人入侵、经济衰退和对奴隶制的过度依赖。最终，它无法承受这些巨大的内部和外部压力的综合影响。虽然罗马帝国最终灭亡了，但它的遗产仍存在于我们的法律、文化、语言等等之中——永远提醒着我们它的不朽伟大。</p></blockquote>
+<p class="translated">文本的自然性足以再次击败大多数分类者，尽管比营销文本要少。对于希望依赖这些工具的教育者来说，这是一个糟糕的预兆；与检测抄袭不同，识别人工智能生成的文本是一项更加微妙的任务。</p>
+<p/><div id="attachment_2487151" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2487151" decoding="async" loading="lazy" class="wp-image-2487151 size-large" src="../Images/1b0fc8bbebe2dc946dbea98e2efb9f33.png" alt="Text generation classifier" srcset="https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/catch-gpt-essay.png 965w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/catch-gpt-essay.png?resize=150,63 150w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/catch-gpt-essay.png?resize=300,126 300w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/catch-gpt-essay.png?resize=768,322 768w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/catch-gpt-essay.png?resize=680,285 680w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/catch-gpt-essay.png?resize=50,21 50w" sizes="(max-width: 680px) 100vw, 680px" data-original-src="https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/catch-gpt-essay.png?w=680"/><p id="caption-attachment-2487151" class="wp-caption-text translated">CatchGPT 的胜利。<strong>图片来源:</strong> TechCrunch</p></div>
+<ul>
+<li class="translated">OpenAI 分类器:分类不正确</li>
+<li class="translated">AI 写检查:分类不正确</li>
+<li class="translated"><strong> GPTZero:分类正确</strong></li>
+<li class="translated">Copyleaks:分类不正确</li>
+<li class="translated">GPT 雷达:分类不正确</li>
+<li class="translated"><strong> CatchGPT:分类正确</strong></li>
+<li class="translated">Originality.ai:分类不正确</li>
+</ul>
+<h2 class="translated">论文大纲</h2>
+<p class="translated">大多数小学生都能写出文章的大纲。人工智能也可以——克劳德不费吹灰之力就写出了一篇关于枪支管制利弊的论文大纲。它有助于标记每个段落(例如，“主体段落”、“分析和讨论”)，对有分歧的主题保持冷静的语气:</p>
+<blockquote><p class="translated"><em> I)引言:介绍枪支管制的话题，并注意虽然许多人认为个人应该有权携带武器，但其他人认为枪支管制立法有助于减少枪支暴力。</em></p>
+<p class="translated">正文第 1 段:支持枪支管制的论点:支持者认为，容易获得枪支导致更多的杀人、自杀和其他与枪支有关的死亡。他们指出，枪支法律更加严格的州与枪支相关的死亡人数更少。背景调查、等待期和限制攻击性武器等更严格的措施可以让枪支远离罪犯、恐怖分子和其他危险分子，从而有助于拯救生命。</p>
+<p class="translated"><em> III)正文第 2 段:反对枪支管制的论点:反对者反驳说，人们有自卫的权利，“好人”应该能够拥有枪支来保护自己不受“坏人”的伤害。他们认为拥有枪支是一项重要的自由，负责任的守法公民应该能够拥有枪支。他们认为，枪支管制立法不会阻止罪犯，他们总是会找到获得枪支的方法。更严格的法律只会限制普通人的自由，使他们更不安全。</em></p>
+<p class="translated"><em>四)分析和讨论:讨论双方的观点，分析每一个论点的优点和问题。例如，枪支限制会减少枪支暴力还是仅仅限制自由？限制是解除了好公民的武装，让他们处于危险之中，还是主要威慑不负责任的人或罪犯？像背景调查这样的措施能达到平衡吗？解释枪支暴力问题的复杂性以及不同地区不同程度的限制。</em></p>
+<p class="translated">结论:通过重申你对枪支管制立法优点的分析和总体结论来结束这篇文章。注意到这些问题的多面性，并提出一种在尊重权利的同时有可能减少枪支暴力的方法。</p></blockquote>
+<p class="translated">轮廓可能骗过了我，但探测器过得更轻松。三个——open ai 分类器 GPTZero 和 catch GPT——流行起来。</p>
+<p/><div id="attachment_2487157" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2487157" decoding="async" loading="lazy" class="wp-image-2487157 size-large" src="../Images/95d2b0808332958733acfa98519cdc09.png" alt="Text generation classifier" srcset="https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/Screenshot-44.png 799w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/Screenshot-44.png?resize=150,117 150w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/Screenshot-44.png?resize=300,234 300w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/Screenshot-44.png?resize=768,599 768w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/Screenshot-44.png?resize=680,530 680w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/Screenshot-44.png?resize=50,39 50w" sizes="(max-width: 680px) 100vw, 680px" data-original-src="https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/Screenshot-44.png?w=680"/><p id="caption-attachment-2487157" class="wp-caption-text translated">OpenAI 的分类器发现了人工智能生成的文本。<strong>图片来源:</strong> TechCrunch</p></div>
+<ul>
+<li class="translated"><strong> OpenAI 分类器:分类正确</strong></li>
+<li class="translated">AI 写检查:分类不正确</li>
+<li class="translated"><strong> GPTZero:分类正确</strong></li>
+<li class="translated">Copyleaks:分类不正确</li>
+<li class="translated">GPT 雷达:分类不正确</li>
+<li class="translated"><strong> CatchGPT:分类正确</strong></li>
+<li class="translated">Originality.ai:分类不正确</li>
+</ul>
+<h2 class="translated">新闻文章</h2>
+<p class="translated">与前面的示例一样，我们使用 Claude 生成的新闻文章没有明显的虚假成分。它读起来很好，结构或多或少是倒金字塔风格。它不包含明显的事实错误或逻辑矛盾:</p>
+<blockquote><p class="translated"><em>拜登在 2020 年美国大选中击败特朗普，结束了一场分裂的竞选</em></p>
+<p class="translated">前副总统乔·拜登(Joe Biden)在选举中击败了特朗普总统，此次选举吸引了创纪录数量的选民，并成为对特朗普动荡任期的公投。</p>
+<p class="translated"><em>拜登的胜利相当于数百万选民对特朗普的否定，此前四年的极度动荡引发了一场关于美国价值观和未来的激烈辩论。拜登在竞选中提出了扩大医疗保健、解决经济不平等和应对气候变化的计划，同时誓言要“恢复国家的灵魂”，并号召美国人朝着一个共同的目标前进。</em></p>
+<p class="translated"><em>拜登在周六上午的一份简短声明中说，美国人民对他的信任让他感到“荣幸和谦卑”。他在特拉华州威尔明顿说，战斗已经结束，但重塑国家灵魂的运动才刚刚开始。，庆祝者在附近欢呼并按响汽车喇叭。美国人是时候团结起来了。</em></p>
+<p class="translated">特朗普没有表现出让步的迹象，声称没有证据表明选举被“操纵”,他在大选之夜在一些州的早期领先优势表明他是合法的赢家。州选举官员和外部专家说，在一场致命的疫情中，这次选举进行得很顺利，没有出现重大违规行为。</p>
+<p class="translated"><em>这一结果相当于否定了特朗普对种族不满的分裂性呼吁以及对病毒的强硬回应，该病毒已在美国夺走了 23.2 万人的生命，并导致数百万人失业。</em></p></blockquote>
+<p class="translated">因此，探测器挣扎也就不足为奇了。除了 GPTZero，没有人能够正确地对文章进行分类。Originality.ai 甚至给了它 0%的机会是人工智能生成的。大呀。</p>
+<p/><div id="attachment_2486654" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2486654" decoding="async" loading="lazy" class="wp-image-2486654 size-large" src="../Images/82bd86b9155f78b24f5ee2e1f0269fc9.png" alt="AI text classifier" srcset="https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/news-article-ai-classifier.png 1181w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/news-article-ai-classifier.png?resize=150,43 150w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/news-article-ai-classifier.png?resize=300,87 300w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/news-article-ai-classifier.png?resize=768,222 768w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/news-article-ai-classifier.png?resize=680,197 680w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/news-article-ai-classifier.png?resize=50,14 50w" sizes="(max-width: 680px) 100vw, 680px" data-original-src="https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/news-article-ai-classifier.png?w=680"/><p id="caption-attachment-2486654" class="wp-caption-text translated">艾写检查弄得很不对。<strong>图片来源:</strong> TechCrunch</p></div>
+<ul>
+<li class="translated">OpenAI 分类器:分类不正确</li>
+<li class="translated">AI 写检查:分类不正确</li>
+<li class="translated"><strong> GPTZero:分类正确</strong></li>
+<li class="translated">Copyleaks:分类不正确</li>
+<li class="translated">GPT 雷达:分类不正确</li>
+<li class="translated">CatchGPT:分类不正确</li>
+<li class="translated">Originality.ai:分类不正确</li>
+</ul>
+<h2 class="translated">附信</h2>
+<p class="translated">我们和克劳德一起写的求职信具备直截了当、严肃认真的专业信函的所有特征。它突出了一个虚构的律师助理求职者的技能，发明了一个律师事务所的名字(有点奇怪)，并引用了 Westlaw 和 LexisNexis 等法律发现工具:</p>
+<blockquote><p class="translated"><em>亲爱的招聘经理，</em></p>
+<p class="translated">我写这封信是为了表达我对贵公司律师助理这个职位的强烈兴趣。我相信我在法律领域的经验和教育使我成为这个职位的绝佳候选人。</p>
+<p class="translated">在过去的两年里，我在史密斯琼斯律师事务所担任律师助理，在那里我获得了在民事诉讼案件的各个方面为律师提供支持的丰富经验。我一贯组织和维护数千页的法律文件，包括抄本、宣誓书和发现材料。我还简化了公司的文件管理系统，节省了大量时间。此外，我起草了与客户、对方律师和第三方的通信；在审判中得到协助；并完成了法律研究项目，以支持审前动议和和解谈判。</p>
+<p class="translated"><em>在担任律师助理之前，我在【学院名称】获得了律师助理研究的副学士学位。我的课程和实习经历为法律研究和写作等关键领域打下了坚实的基础，也为相关软件和数据库包括 Westlaw 和 LexisNexis 提供了知识。我通过持续的职业发展来保持我的技能和知识与时俱进。</em></p>
+<p class="translated"><em>在我的工作和教育经历之外，我是一个勤奋、注重细节的人，具有出色的组织和沟通能力。我在快节奏的环境中茁壮成长，并擅长平衡和优先处理复杂的、时间敏感的任务，以满足紧迫的期限。我希望有机会为贵公司的客户和案件的成功做出贡献。</em></p>
+<p class="translated">感谢您的考虑。我期待着与您进一步讨论这个机会。</p>
+<p class="translated"><em>真诚地，</em></p>
+<p class="translated"><em>【你的名字】</em></p></blockquote>
+<p class="translated">这封信难倒了 OpenAI 的分类器，它无法自信地说这是人工智能还是人类写的。GPTZero 和 CatchGPT 成功地发现了人工智能生成的文本，但其余的检测器未能做到这一点。</p>
+<p/><div id="attachment_2487159" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2487159" decoding="async" loading="lazy" class="vertical wp-image-2487159 size-large" src="../Images/8d8d02f35a034f5d1aa49d12543ef587.png" alt="Text generation classifier" srcset="https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/Screenshot-45.png 677w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/Screenshot-45.png?resize=104,150 104w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/Screenshot-45.png?resize=207,300 207w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/Screenshot-45.png?resize=470,680 470w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/Screenshot-45.png?resize=35,50 35w" sizes="(max-width: 470px) 100vw, 470px" data-original-src="https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/Screenshot-45.png?w=470"/><p id="caption-attachment-2487159" class="wp-caption-text translated">GPTZero 令人印象深刻地检测到了人工智能产生的比特。<strong>图片来源:</strong> TechCrunch</p></div>
+<ul>
+<li class="translated">OpenAI 分类器:分类不正确</li>
+<li class="translated">AI 写检查:分类不正确</li>
+<li class="translated"><strong> GPTZero:分类正确</strong></li>
+<li class="translated">Copyleaks:分类不正确</li>
+<li class="translated">GPT 雷达:分类不正确</li>
+<li class="translated"><strong> CatchGPT:分类正确</strong></li>
+<li class="translated">Originality.ai:分类不正确</li>
+</ul>
+<h2 class="translated">简历</h2>
+<p class="translated">将假求职信和假简历搭配起来似乎很合适。我们告诉 Claude 为一个软件工程师写一个，它交付了——大部分。我们想象中的候选人有各种各样的编程技能，但没有一项特别令人难以置信:</p>
+<blockquote><p class="translated"><em>无名氏</em></p>
+<p class="translated"><em>·软件工程师，3 年经验</em></p>
+<p class="translated"><em>jdoe@email.com 123-456-7890</em></p>
+<p class="translated"><em>技术技能:Java、JavaScript、C++、SQL、MySQL、Git、敏捷方法论、软件设计、算法、数据结构</em></p>
+<p class="translated"><em>·职业经历:</em></p>
+<p class="translated"><em>ACME Corp，软件工程师，2018 年至今</em></p>
+<p class="translated"><em>从事公司旗舰产品——总部位于 SaaS 的大数据分析平台——的核心组件工作。</em></p>
+<p class="translated"><em>领导数据摄取模块的设计和开发，能够处理海量的流数据。用过 Java 和 MySQL。</em></p>
+<p class="translated"><em>通过实施先进的数据验证和校正算法，将上游数据错误减少了 42%。</em></p>
+<p class="translated"><em>XYZ 科技公司，软件工程师实习生，2017 年夏季</em></p>
+<p class="translated"><em>使用 JavaScript 和 Node.js 为电子商务公司开发后端组件</em></p>
+<p class="translated"><em>原型化并演示了核心数据库和 API 的扩展，以应对 5 倍的增长。</em></p>
+<p class="translated"><em>教育:</em></p>
+<p class="translated"><em>2017 年大理工大学计算机专业学士学位</em></p>
+<p class="translated"><em>课程包括算法、操作系统、机器学习、软件架构和计算理论。</em></p>
+<p class="translated"><em>3.8 GPA</em></p>
+<p class="translated"><em>技能:分析、沟通、解决问题、注重细节</em></p>
+<p class="translated">兴趣:跑步、阅读和徒步旅行</p></blockquote>
+<p class="translated">显然，探测器同意。这份假简历甚至难倒了 GPTZero，在此之前，GPT zero 一直是这一系列简历中最可靠的。</p>
+<p/><div id="attachment_2487162" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2487162" decoding="async" loading="lazy" class="vertical wp-image-2487162 size-large" src="../Images/9a44c2ede1fcca01db360394dd32aef4.png" alt="Text generation classifier" srcset="https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/Screenshot-46.png 689w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/Screenshot-46.png?resize=103,150 103w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/Screenshot-46.png?resize=206,300 206w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/Screenshot-46.png?resize=466,680 466w, https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/Screenshot-46.png?resize=34,50 34w" sizes="(max-width: 466px) 100vw, 466px" data-original-src="https://web.archive.org/web/20230403115005im_/https://techcrunch.com/wp-content/uploads/2023/02/Screenshot-46.png?w=466"/><p id="caption-attachment-2487162" class="wp-caption-text translated">GPTZero 不可能赢所有人。<strong>图片来源:</strong> TechCrunch</p></div>
+<ul>
+<li class="translated">OpenAI 分类器:分类不正确</li>
+<li class="translated">AI 写检查:分类不正确</li>
+<li class="translated">分类不正确</li>
+<li class="translated">Copyleaks:分类不正确</li>
+<li class="translated">GPT 雷达:分类不正确</li>
+<li class="translated"><strong> CatchGPT:分类正确</strong></li>
+<li class="translated">Originality.ai:分类不正确</li>
+</ul>
+<h2 class="translated">分类器的问题是</h2>
+<p class="translated">在所有这些测试之后，我们能得出什么结论呢？一般来说，人工智能文本检测器在检测方面做得很差。GPTZero 是唯一一个持续表现的人，对人工智能生成的文本进行了七次正确分类中的五次。至于其他的…就没那么多了。CatchGPT 在准确性方面排名第二，七个正确分类中有四个正确分类，而 OpenAI 分类器排名第三，七个正确分类中有一个正确分类。</p>
+<p class="translated">那么为什么 AI 文字检测器这么不靠谱呢？</p>
+<p class="translated">检测器本质上是人工智能语言模型，它训练了许多许多来自网络的公开文本的例子，并进行微调，以预测一段文本有多大可能是由人工智能生成的。在训练过程中，检测器将文本与来自网站和其他来源的相似(但不完全相同)人类书写的文本进行比较，试图学习泄露文本来源的模式。</p>
+<p class="translated">问题是，人工智能生成的文本的质量在不断提高，检测器可能是在许多老一辈的例子上训练的。除非在近乎连续的基础上对它们进行重新训练，否则分类器模型必定会随着时间的推移变得越来越不准确。</p>
+<p class="translated">当然，任何分类器都可以通过修改人工智能生成的文本中的一些单词或句子来轻松规避。对于意志坚定的学生和骗子来说，这很可能成为一场猫捉老鼠的游戏。随着文本生成人工智能的改进，检测器也会改进。</p>
+<p class="translated">虽然分类器在某些情况下可能有所帮助，但它们永远不会成为决定文本是否是人工智能生成的唯一可靠证据。这就是说，没有解决人工智能生成的文本所带来的问题的灵丹妙药。很有可能，永远不会有。</p>
+			</div>
+
+			</div>    
+</body>
+</html>

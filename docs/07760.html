@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>How did a rental startup I'd never heard of leak my home address? | TechCrunch</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">一家我从未听说过的租赁初创公司是如何泄露我的家庭地址的？TechCrunch</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2022/06/30/bilt-address-leak-privacy/">https://web.archive.org/web/https://techcrunch.com/2022/06/30/bilt-address-leak-privacy/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">我认为自己是一个相当注重隐私的人，我会尽我所能避免网上追踪，并且在很大程度上避免垃圾邮件。但当我发现自己盯着一家我从未听说过的公司的网站上的家庭地址时，我知道我在某个地方出错了。</p>
+<p class="translated">在 4 月底我们的房租到期的前几天，我的合伙人收到了一封来自我们公寓业主的电子邮件，内容是关于我们在收取积分的同时支付房租的一种新方式，比如一个忠诚度计划。在租金创历史新高的时候，这是一个很好的提议，所以她点击并加载了<a href="https://web.archive.org/web/20230407072825/https://techcrunch.com/2021/06/22/a-rewards-program-for-your-rent-payments-meet-bilt/">租赁奖励公司 Bilt Rewards </a>的网站，并突出显示了她的全名和我们的公寓号码。</p>
+<p class="translated">这已经相当惊人了。我们的公寓楼已经把她的信息给了 Bilt，我们现在正盯着它的网站。我从来没有收到我的合作伙伴收到的电子邮件。但我很好奇，Bilt 也有我的信息吗？</p>
+<p class="translated">每当她点击电子邮件中的链接时，它都会打开相同的个性化 Bilt 网页，显示她的姓名和公寓号码，因为该网页通过 API 直接从 Bilt 的服务器上检索她的信息。(一个 API 允许两个东西通过互联网相互对话，在这个例子中是 Bilt 的服务器存储我们的信息和它的网站。)你可以使用浏览器的开发工具看到这一点，不需要什么特别的技巧。使用浏览器的工具，你还可以看到网站也调出了我们居住的公寓楼的名字，尽管它没有显示在 Bilt 的网站上。</p>
+<p class="translated">往好里说，这是对注册页面个性化的一次粗暴尝试，往坏里说，这是对我们家庭住址的侵犯。但也有可能只使用她的电子邮件地址直接从 Bilt 的服务器上检索相同的信息——不需要特殊的电子邮件链接——这就像我们许多人的电子邮件地址是公开的一样，不幸的是不需要太多猜测。</p>
+<p class="translated">我输入我的电子邮件地址，网站返回了我的名字、楼名和公寓号，都是我伴侣的信息。一家我之前从未听说过的初创公司怎么可能获取并泄露我的家庭住址呢？</p>
+<p class="translated">我是美国约 5000 万租房者中的一员。我和我的伴侣以及我们的两只猫住在纽约城外的一栋公寓楼里，这栋公寓楼属于 Equity Residential，是美国最大的公司房东之一，管理着 8 万多套出租公寓。即便如此，Equity 也是包括黑石、AvalonBay 和喜达屋在内的约 20 家公司业主之一，这些公司拥有超过 200 万套房屋，约占美国出租房屋总数的 4%。</p>
+<p class="translated">Bilt 是众多创业公司中的一个，这要归功于最近房地产技术领域的繁荣，也就是众所周知的 proptech。Bilt 由企业家 Ankur Jain 于 2021 年 6 月创建，让租户每次支付租金时都能获得奖励。通过与大多数最大的公司房东的合作关系，Bilt 现在向全美 200 多万出租房屋提供租金奖励计划，包括像我这样由股权拥有的房屋。</p>
+<p class="translated">我开始认为这是<a href="https://web.archive.org/web/20230407072825/https://techcrunch.com/2019/08/03/stockx-hacked-millions-records/">任何其他</a> <a href="https://web.archive.org/web/20230407072825/https://techcrunch.com/2021/10/27/docket-vaccine-records-covid-security/">数据</a> <a href="https://web.archive.org/web/20230407072825/https://techcrunch.com/2019/05/01/ladders-resume-leak/">违规</a> <a href="https://web.archive.org/web/20230407072825/https://techcrunch.com/2019/01/23/financial-files/">故事</a>我过去报道过，想知道还有谁受到影响。</p>
+<p class="translated">我的第一个电话是打给同一栋楼的一个邻居，当他被告知 Bilt 的网站如何泄露了我的地址时，他同意检查一下他是否也受到了影响。我拿出笔记本电脑，我们将他的电子邮件地址输入 Bilt 的 API，它立即返回了他的姓名、建筑名称和公寓号码；他的脸从惶恐变成了恐惧，就像我今天早些时候的表情一样。</p>
+<p class="translated">我的第二个电话是给英国网络安全测试公司 Pen Test Partners 的创始人肯·芒罗(Ken Munro)打来的，这个名字你可能从以前接触过的漏洞在线服务中知道，比如<a href="https://web.archive.org/web/20230407072825/https://techcrunch.com/2021/05/05/peloton-bug-account-data-leak/"> Peloton bikes </a>、<a href="https://web.archive.org/web/20230407072825/https://techcrunch.com/2021/04/21/running-apps-still-lag-behind-on-privacy-and-security/">智能手机应用</a>以及偶尔出现的<a href="https://web.archive.org/web/20230407072825/https://techcrunch.com/2020/10/06/qiui-smart-chastity-sex-toy-security-flaw/">性玩具</a>。我不知道的是，他在美国的一个同事在我的大楼里有一套公寓，他向我证实他的家庭住址的细节也被 API 曝光了。</p>
+<p class="translated">现在我们有四个人，他们的信息仅仅因为知道他们的电子邮件地址就被 Bilt 的漏洞网站暴露了。</p>
+<p class="translated">我联系了 Bilt，他的反应不是很好。</p>
+<p class="translated">“你下面发送的 API 正在按预期工作，”现任 Bilt 首席执行官的 Jain 回应道。(贾恩宣布他的电子邮件“不公开”，这要求双方事先同意条款。我告诉贾恩，我们将公布他的回应，因为没有机会拒绝。)</p>
+<p class="translated">“唯一的例外是少数由 Equity Residential 运营的建筑，它们尚未将 Bilt 集成到本地居民门户中，”Jain 说。“但考虑到建筑物的数量较少，Equity 做出了一个冒险的决定，在短期内使用更加手动的方法发送电子邮件邀请和登录页面。对于这一小组试点建筑，使用该 API 生成的登录页面只需要电子邮件，”他说。</p>
+<p class="translated">Jain 说，API 返回的信息“可以通过任何公共记录搜索广泛而容易地获得”，并且“没有任何私人信息是通过这个 API 披露的，而这些公共记录是不可用的。”(贾恩和我将不得不同意保留不同意见，因为到目前为止，我基本上没有在网上公布我的家庭住址——无论如何，仅仅因为某人的个人信息在一个地方公开，并不能成为在其他地方公开的理由。)</p>
+<p class="translated">当被联系到进行评论时，Equity 发言人 Marty McKenna 说:“在我们完成与 Bilt 的整合时，我们正在有限数量的建筑中使用这一过程。我们不同意这是一个安全问题，”麦肯纳说。</p>
+<p class="translated">麦肯纳一再拒绝透露有多少产权建筑的居民的信息被曝光。但我自己泄露的信息留下了一些线索，表明这个数字可能至少是 21 栋产权式建筑，相当于数千个租户。当被问及建筑物的数量时，麦肯纳没有否认这个数字。</p>
+<p class="translated">5 月 26 日，差不多是我第一次联系的一个月后，Bilt 终于堵住了漏洞。</p>
+<p class="translated">但我仍然不清楚 Bilt 是如何获得我的信息的，在我签署的租赁协议中没有提到数据收集或共享。</p>
+<p class="translated">麦肯纳解开了这个谜，他告诉我:“Equity Residential 与服务提供商共享信息，以便为我们的居民提供服务。我们这样做的权力在于我们网站上的使用条款和隐私政策。”</p>
+<p class="translated">简短的回答是肯定的，网站上的隐私政策没有人认为——我也不认为——可以阅读。从你走进一栋股权大楼的那一刻起，它的<a href="https://web.archive.org/web/20230407072825/https://www.equityapartments.com/privacy">隐私政策</a>就允许大范围的数据收集，包括线下收集，比如在你签署公寓租赁协议时收集的关于你的数据。大部分数据可以与第三方公司共享，原因很多，比如代表股权提供服务。根据该政策，像 Bilt 这样的公司“可能有权访问[个人身份信息]，以便向我们或代表我们提供这些服务。”</p>
+<p class="translated">这不是股票独有的现象。许多其他公司的所有者在他们的隐私政策中使用类似的无所不包的语言，这给了他们广泛的自由来收集、使用、分享或出售你的个人信息。</p>
+<p class="translated">AvalonBay 在美国东海岸拥有 79，000 套公寓，它在<a href="https://web.archive.org/web/20230407072825/https://www.avaloncommunities.com/privacy-policy">的隐私政策</a>中使用了相同的逐字逐句的语言，将租户的个人信息提供给与其合作的第三方。这可能包括洗衣服务、停车场提供商或像 Bilt 这样的租金支付处理器。访问您个人信息的第三方数量会迅速增加。</p>
+<p class="translated">德克萨斯大学奥斯汀分校美国研究系助理教授 Erin McElroy 的研究包括 proptech 和住房，她告诉 TechCrunch，住房越来越被视为一种商品，而不是一种权利或社会商品。随着租户越来越多地被框定为消费者，一个人在使用某种产品或服务时可能经历的许多事情现在也作为租户经历。“这是战略性的，是住房公司化和金融化的重要组成部分，租户肯定不会把自己当成消费者，阅读租赁协议中的所有细则，想象这样的事情可能会发生，”麦克埃尔罗伊说。</p>
+<p class="translated">一些隐私政策走得更远。GID 拥有超过 86，000 个住宅单元，它有一个<a href="https://web.archive.org/web/20230407072825/https://www.gid.com/privacy-policy/">隐私政策</a>，明确允许它向其附属公司、其他管理公司和数据经纪人出售大量租户的个人信息，这些公司进一步收集、合并和出售你的信息给其他人。</p>
+<p class="translated">Hunton Andrews Kurth 的隐私律师兼合伙人丽莎·索托(Lisa Sotto)在电话中告诉 TechCrunch，“有一个控制数据使用的隐私政策是非常常见的。索托说，隐私政策不是空话:“它们受到美国联邦贸易委员会的监管，联邦贸易委员会禁止不公平或欺骗性的贸易行为。”</p>
+<p class="translated">联邦贸易委员会可以，而且有时确实会对滥用数据或数据安全措施不力的公司采取行动，如<a href="https://web.archive.org/web/20230407072825/https://techcrunch.com/2022/01/05/ftc-settle-mortgage-files-exposed/">抵押贷款数据公司</a>暴露敏感的个人信息，试图<a href="https://web.archive.org/web/20230407072825/https://techcrunch.com/2022/03/16/ftc-cafepress-fined-breach/">掩盖数据泄露</a>，以及科技公司<a href="https://web.archive.org/web/20230407072825/https://techcrunch.com/2022/05/25/twitter-agrees-to-pay-150m-for-breaking-privacy-promises/">违反</a>他们的<a href="https://web.archive.org/web/20230407072825/https://techcrunch.com/2021/01/13/flo-gets-ftc-slap-for-sharing-user-data-when-it-promised-privacy/">隐私承诺</a>。正如 Orrick 律师事务所的律师写的那样:“你可以出售租户的数据并不意味着你应该出售这些数据。"</p>
+<p class="translated">但没有专门保护租户个人信息共享的规则。</p>
+<p class="translated">相反，由各州自行立法。索托说，美国只有少数几个州——加利福尼亚、康涅狄格、科罗拉多、犹他和弗吉尼亚——通过了保护这些州消费者的隐私法。在撰写本文时，只有加州的法律是有效的。</p>
+<p class="translated">加利福尼亚州成为美国第一个颁布个人隐私权的州——类似于 GDPR 统治下所有欧洲人享有的隐私权。《加州消费者隐私法》于 2020 年 1 月生效，赋予加州人访问、更改和删除公司和组织收集的数据的权利。CCPA 成为渴望数据的公司的主要眼中钉，因为法律迫使他们在隐私政策中开辟广泛的例外，允许加州人有权选择不将其数据出售给第三方。这也常常迫使公司为加州居民提供完全独立的隐私政策，就像 GDPR 几年前所做的那样。</p>
+<p class="translated">至少可以说，CCPA 和 GDPR 一样是不完美的。但作为美国第一部全州隐私法，它为其他州树立了榜样，并在理想情况下随着时间的推移不断完善。</p>
+<p class="translated">弗吉尼亚州是下一个法律将于 2023 年 1 月生效的州。但是批评者称该法案“软弱无力”，同时有报道称该法案的文本是由亚马逊和微软的游说者撰写的，旨在为他们的公司利益服务。科技巨头们正在支持和推动经过大力游说的州隐私法，比如弗吉尼亚州的隐私法，<a href="https://web.archive.org/web/20230407072825/https://themarkup.org/privacy/2021/04/15/big-tech-is-pushing-states-to-pass-privacy-laws-and-yes-you-should-be-suspicious">的最终目标是推动联邦立法</a>，在全美范围内创建更弱的一揽子规则，以取代各州法律的拼凑——包括规则最强的加利福尼亚州。</p>
+<p class="translated">但是，虽然一小部分美国人受到一些隐私法的保护，但大多数人生活在对个人信息共享几乎没有保护的州。</p>
+<p class="translated">“立法真的很少，”麦克罗伊说。“租户通常不会被告知正在收集哪些关于他们的数据。他们没有机会同意，也没有得到任何潜在危害的暗示，”他们说。</p>
+<p class="translated">如果我知道我的公司房东会将我的个人信息与第三方分享，而第三方对保护这些信息漠不关心，我会搬进这间公寓吗？也许不是。但是随着<a href="https://web.archive.org/web/20230407072825/https://www.nytimes.com/2022/06/09/realestate/manhattan-rent-nyc.html">房租暴涨</a>和全球经济衰退的逼近，尽管美国一些最大的公司房东获得了创纪录的利润，租房者可能没有太多的选择。</p>
+<p class="translated">“随着住房被这些公司席卷，大多数城市都出现了负担得起的住房危机，租户在寻找租房子时不能太挑剔，”麦克埃尔罗伊说。“租户往往被迫放弃寻找数据政策不那么滥用的房东，因为没有其他选择。”</p>
+<p class="translated">那么，一家科技初创公司是如何获得我的家庭住址的呢？简单合法。至于泄露出去？那只是糟糕的安全措施。</p>
+<p class="translated"><b>关于 TechCrunch 的更多信息:</b></p>
+
+			</div>
+
+			</div>    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Dropbase can turn your messy spreadsheet into queryable SQL database</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">Dropbase 可以把你杂乱的电子表格变成可查询的 SQL 数据库</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2022/08/11/dropbase-can-help-turn-your-messy-spreadsheet-into-queryable-sql-database/">https://web.archive.org/web/https://techcrunch.com/2022/08/11/dropbase-can-help-turn-your-messy-spreadsheet-into-queryable-sql-database/</a></blockquote><div><header class="article__header ">
+	<p class="article__title-wrapper">
+						</p><h1 class="article__title translated">Dropbase 可以帮助你把杂乱的电子表格变成可查询的 SQL 数据库</h1>
+		
+
+			
+	
+			
+	</header>
+
+			<div class="article-content">
+				<p id="speakable-summary" class="translated">一家科技公司的诞生并非偶然。众所周知，<a href="https://web.archive.org/web/20221007105611/https://techcrunch.com/2019/05/30/the-slack-origin-story/"> Slack 是一家现已倒闭的游戏公司的副产品</a>。同样，当 Dropbase 创始人陈境柠和阿亚詹·扎汗在<a href="https://web.archive.org/web/20221007105611/https://www.ycombinator.com/companies/dropbase" target="_blank" rel="noopener"> Y Combinator Winter 20 批次</a>时，他们正在测试他们当时构建的产品，偶然发现了后来成为<a href="https://web.archive.org/web/20221007105611/http://dropbase.io/" target="_blank" rel="noopener"> Dropbase </a>的东西。</p>
+<p class="translated">两位创始人正努力将电子表格数据转移到 SQL 数据库中，以便进行处理。即使他们是技术人员，如果不进行大量的修补，他们也无法让一切正常工作。他们开发了一个工具，使得将. csv 文件拖放到 Postgres 数据库并开始查询变得容易。</p>
+<p class="translated">Chan 说，对他们来说，这是一个突然发现的时刻，因为他们意识到，如果他们在做这件事上遇到困难，很多其他人也会遇到困难，于是他们转变思路，创建了 Dropbase。</p>
+<p class="translated">“我们在想，应该有一种更简单的方法来做到这一点。我只想将一个. csv 文件直接拖放到 SQL 数据库中。这就是我们想出 Dropbase 这个名字的原因，因为你可以把它拖到 Postgres 数据库中，我们只给你数据库的凭证，这样你就可以立即访问它。csv 文件存储在您的托管云数据库中。这就是我们如何开始的，”Chan 告诉 TechCrunch。</p><p class="piano-inline-promo"/>
+<p class="translated">他们必须克服一些与数据打交道的人都熟悉的大障碍，例如协调同一数据中可能混淆转换过滤器的差异。“拖放. csv 文件后，该文件通常仍有许多问题。有时候世界不同的地方会编码。csv 文件不同。例如，在法国，他们用分号而不是逗号。所以首先，我们做推论。我们查看数据样本，并试图猜测打开文件的最佳方式，”他说。</p>
+<p class="translated">他说，另一个问题是，数据并不总是以你期望的格式出现在表格中，所以你如何让它保持一致？他们提出了检查的概念，以确保数据以正确的格式通过转换过滤器，但 Chan 说这些超出了简单的语法检查。</p>
+<p/><div id="attachment_2370652" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2370652" loading="lazy" class="size-large wp-image-2370652" src="../Images/521088b09f5ee73daec3d4edf38e8ef8.png" alt="Dropbase database table with checks showing email address in incorrect format." srcset="https://web.archive.org/web/20221007105611im_/https://techcrunch.com/wp-content/uploads/2022/08/TechCrunch-1390x781-2.png 1390w, https://web.archive.org/web/20221007105611im_/https://techcrunch.com/wp-content/uploads/2022/08/TechCrunch-1390x781-2.png?resize=150,84 150w, https://web.archive.org/web/20221007105611im_/https://techcrunch.com/wp-content/uploads/2022/08/TechCrunch-1390x781-2.png?resize=300,169 300w, https://web.archive.org/web/20221007105611im_/https://techcrunch.com/wp-content/uploads/2022/08/TechCrunch-1390x781-2.png?resize=768,432 768w, https://web.archive.org/web/20221007105611im_/https://techcrunch.com/wp-content/uploads/2022/08/TechCrunch-1390x781-2.png?resize=680,382 680w, https://web.archive.org/web/20221007105611im_/https://techcrunch.com/wp-content/uploads/2022/08/TechCrunch-1390x781-2.png?resize=1200,674 1200w, https://web.archive.org/web/20221007105611im_/https://techcrunch.com/wp-content/uploads/2022/08/TechCrunch-1390x781-2.png?resize=50,28 50w" sizes="(max-width: 680px) 100vw, 680px" data-original-src="https://web.archive.org/web/20221007105611im_/https://techcrunch.com/wp-content/uploads/2022/08/TechCrunch-1390x781-2.png?w=680"/><p id="caption-attachment-2370652" class="wp-caption-text translated"><strong>图片来源:</strong> Dropbase</p></div>
+<p class="translated">“它们实际上是语义检查。所以我的意思是，我们不只是检查你的邮政编码是否是某种格式，我们还可以检查你的日期是否在给定的范围内，或者在某个时间之后或之前，或者你的数字是否应该是某个最小值。所以这是一种更复杂的检查，”他解释道。</p>
+<p class="translated">他说，一旦他们向用户展示了问题，他们就可以清理任何遗留的问题，然后加载数据库，并可以在 SQL 中进行查询。“将数据存储在 SQL 数据库中的好处是可以快速查询。这是第一件事。第二件事是，你可以用一种更简单的方式将它连接到一个下游工具，如 BI 工具或另一个数据工具。随着时间的推移，你可以建立更多的历史数据集，”他说。</p>
+<p class="translated">该产品的最新功能包括一个名为 Dropmail 的新工具，它允许用户通过电子邮件发送一个. csv 文件，将其转换为 SQL 数据库，并能够通过雪花集成托管您自己的数据。</p>
+<p class="translated">到目前为止，该公司已经筹集了 175 万美元的种子前融资，由谷歌的 Gradient Ventures 牵头，YC 和其他人也参与了进来。</p>
+
+			</div>
+
+			</div>    
+</body>
+</html>

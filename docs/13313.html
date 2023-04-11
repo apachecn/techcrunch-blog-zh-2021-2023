@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Ransomware gang caught using Microsoft-approved drivers to hack targets • TechCrunch</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">勒索软件团伙使用微软批准的驱动程序攻击目标被抓获 TechCrunch</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2022/12/13/cuba-ransomware-microsoft-drivers/">https://web.archive.org/web/https://techcrunch.com/2022/12/13/cuba-ransomware-microsoft-drivers/</a></blockquote><div><header class="article__header ">
+	<p class="article__title-wrapper">
+						</p><h1 class="article__title translated">勒索软件团伙使用微软批准的驱动程序攻击目标</h1>
+		
+
+			
+	
+			
+	</header>
+
+			<div class="article-content">
+				<p id="speakable-summary" class="translated">安全研究人员表示，他们有证据表明，与古巴勒索软件团伙有关联的威胁行为者在最近的一次勒索软件攻击企图中使用了微软认证的恶意硬件驱动程序。</p>
+<p class="translated">驱动程序是允许操作系统和应用程序访问硬件设备并与之通信的软件，它需要对操作系统及其数据的高度特权访问，这就是为什么 Windows 要求驱动程序在允许驱动程序加载之前具有批准的加密签名。</p>
+<p class="translated">这些驱动程序长期以来一直被网络犯罪分子滥用，通常采取“自带易受攻击的驱动程序”的方法，黑客利用合法软件发行商现有 Windows 驱动程序中的漏洞。<a href="https://web.archive.org/web/20230207091100/https://news.sophos.com/en-us/2022/12/13/signed-driver-malware-moves-up-the-software-trust-chain/?cmp=30728" target="_blank" rel="noopener"> Sophos </a>的研究人员称，他们观察到黑客们正在齐心协力地逐步使用更受广泛信任的数字证书。</p>
+<p class="translated">在调查客户网络上的可疑活动时，Sophos 发现了与俄罗斯有联系的古巴勒索软件团伙正在努力向信任链上移动的证据。在他们的调查中，Sophos 发现该团伙最早的恶意驱动程序可以追溯到 7 月份，由中国公司的证书签名，然后开始用泄露的 Nvidia 证书签名他们的恶意驱动程序，该证书是在 Lapsus$勒索软件团伙 3 月份入侵芯片制造商时在<a href="https://web.archive.org/web/20230207091100/https://techcrunch.com/2022/03/01/nvidia-hackers-leak-ransomware/">倾倒的数据中发现的。</a></p>
+<p class="translated">攻击者现在已经设法从微软的官方 Windows 硬件开发者计划中获得了“标志”，这意味着该恶意软件天生就受到任何 Windows 系统的信任。</p>
+<p class="translated">Sophos 研究人员 Andreas Klopsch 和 Andrew Brandt 在博客文章<a href="https://web.archive.org/web/20230207091100/https://news.sophos.com/en-us/2022/12/13/signed-driver-malware-moves-up-the-software-trust-chain/" target="_blank" rel="noopener">中写道:“威胁行为者正在沿着信任金字塔向上移动，试图使用越来越可信的密钥对他们的驱动程序进行数字签名。“来自大型可信软件发行商的签名使驱动程序更有可能不受阻碍地加载到 Windows 中，增加了古巴勒索软件攻击者终止保护其目标计算机的安全进程的机会。"</a></p><p class="piano-inline-promo"/>
+<p class="translated">Sophos 发现，古巴团伙使用所谓的 BurntCigar loader 的变种将恶意签名驱动程序植入目标系统，这是一种与勒索软件集团有关的已知恶意软件，最早由 Mandiant 发现。这两种方法被协同使用，试图在目标机器上禁用端点检测安全工具。</p>
+<p class="translated">如果成功(在这种情况下，他们没有成功)，攻击者可以在受损系统上部署勒索软件。</p>
+<p class="translated">Sophos 与来自<a href="https://web.archive.org/web/20230207091100/https://www.mandiant.com/resources/blog/hunting-attestation-signed-malware" target="_blank" rel="noopener"> Mandiant </a>和<a href="https://web.archive.org/web/20230207091100/https://www.sentinelone.com/labs/driving-through-defenses-targeted-attacks-leverage-signed-malicious-microsoft-drivers/" target="_blank" rel="noopener"> SentinelOne </a>的研究人员一起，在 10 月份通知微软，由合法证书认证的驱动程序在后期开发活动中被恶意使用。微软自己的调查显示，微软合作伙伴中心的几个开发人员帐户参与了提交恶意驱动程序以获得微软签名的活动。</p>
+<p class="translated">“微软威胁情报中心正在进行的分析表明，签署的恶意驱动程序可能被用来促进利用后的入侵活动，如勒索软件的部署，”微软<a href="https://web.archive.org/web/20230207091100/https://msrc.microsoft.com/update-guide/vulnerability/ADV220005" target="_blank" rel="noopener">在咨询</a>中表示，这是其每月定期发布的安全补丁的一部分，称为补丁星期二。微软表示，它已经发布了 Windows 安全更新，撤销了受影响文件的证书，并暂停了合作伙伴的卖家账户。</p>
+<p class="translated">本月早些时候，美国政府的一份咨询报告显示，<a href="https://web.archive.org/web/20230207091100/https://techcrunch.com/2022/12/02/fbi-cisa-cuba-ransomware/">古巴勒索软件团伙通过攻击全球 100 个组织</a>带来了额外的 6000 万美元。该公告警告说，自 2019 年以来一直活跃的勒索软件集团继续针对关键基础设施中的美国实体，包括<a href="https://web.archive.org/web/20230207091100/https://techcrunch.com/tag/financial-services/">金融服务</a>，政府设施，医疗保健和公共卫生，以及关键的制造和信息技术。</p>
+
+			</div>
+
+			</div>    
+</body>
+</html>

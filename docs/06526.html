@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Bluetooth attack can remotely unlock Teslas and smart locks</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">蓝牙攻击可以远程解锁特斯拉和智能锁</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2022/05/18/bluetooth-attack-unlock-tesla/">https://web.archive.org/web/https://techcrunch.com/2022/05/18/bluetooth-attack-unlock-tesla/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">安全研究人员展示了一种新的蓝牙中继攻击，可以远程解锁和操作一些<a href="https://web.archive.org/web/20230407072549/https://techcrunch.com/tag/tesla/">特斯拉</a>车辆。</p>
+<p class="translated">该漏洞存在于蓝牙低能量(BLE)中，该技术由特斯拉的进入系统使用，允许使用该应用程序或钥匙链的司机从附近解锁并操作他们的汽车。大多数依赖于这种基于接近度的认证的设备和车辆都被设计成防止一系列中继攻击，例如，中继攻击通常通过捕获用于解锁车辆的无线电信号来工作，并通过使用加密和引入使中继攻击更加困难的检查来再次重放它，就好像它是真实的请求一样。</p>
+<p class="translated">但总部位于英国<a href="https://web.archive.org/web/20230407072549/https://www.crunchbase.com/organization/ncc-group" target="_blank" rel="noopener">的 NCC Group </a>的研究人员表示，他们已经开发出一种工具，可以进行一种新型的 BLE 链路层中继攻击，绕过现有的缓解措施，理论上使攻击者能够远程解锁和操作车辆。</p>
+<p class="translated">NCC 集团的高级安全顾问 Sultan Qasim Khan 在一篇博客文章中说<a href="https://web.archive.org/web/20230407072549/https://research.nccgroup.com/2022/05/15/technical-advisory-tesla-ble-phone-as-a-key-passive-entry-vulnerable-to-relay-attacks/" target="_blank" rel="noopener">使用 iPhone 13 mini 测试了对 2020 年特斯拉 Model 3 的攻击，iPhone 13 mini 运行的是特斯拉应用程序的最新版本，但版本较旧。根据研究人员的说法，iPhone 被放在离汽车 25 米远的地方，在 iPhone 和汽车之间有两个中继设备。使用该工具，研究人员能够远程解锁车辆。该实验也在 2021 年的特斯拉 Model Y 上成功复制，该车也使用了“手机作为钥匙”技术。</a></p>
+<p class="translated">虽然攻击是针对特斯拉汽车进行的，但 Khan 指出，任何使用 BLE 作为其无钥匙进入系统的车辆都可能容易受到这种攻击。在另一份<a href="https://web.archive.org/web/20230407072549/https://research.nccgroup.com/2022/05/15/technical-advisory-kwikset-weiser-ble-proximity-authentication-in-kevo-smart-locks-vulnerable-to-relay-attacks/" target="_blank" rel="noopener">咨询报告</a>中，NCC 集团警告称，这种攻击也可能被用于针对 Kwikset 和魏泽 Kevo 系列智能锁，这些智能锁通过其“触摸开启”功能支持 BLE 被动进入。</p>
+<p class="translated">在与 TechCrunch 分享的一段视频中，可以看到 Khan 拿着一台连接有中继设备的笔记本电脑走向特斯拉 Model Y，这使他可以无线解锁汽车并打开车门。</p>
+<p class="embed breakout embed-oembed embed--video embed--youtube"/>
+<p class="translated">“我们的研究表明，人们用来保护汽车、家庭和私人数据的系统正在使用蓝牙近距离认证机制，这种机制可以通过廉价的现成硬件轻松破解，”Khan 说。</p>
+<p class="translated">研究人员向特斯拉和蓝牙特别兴趣小组(SIG)披露了他们的发现，SIG 是一个监督蓝牙标准发展的行业组织，它承认了这个问题，但表示中继攻击是蓝牙的一个已知问题。特斯拉官员还表示，中继攻击是被动进入系统的一个已知限制。特斯拉没有回应 TechCrunch 的置评请求。(特斯拉<a href="https://web.archive.org/web/20230407072549/https://techcrunch.com/2020/10/15/teslas-decision-to-scrap-its-pr-department-could-create-a-pr-nightmare/">2020 年报废其公关团队</a>。)</p>
+<p class="translated">“NCC 集团建议 SIG 主动建议其成员开发关于 BLE 中继攻击风险的邻近认证系统，”Khan 补充道。此外，文档应明确说明中继攻击是可行的，必须包含在威胁模型中，并且无论是链路层加密还是正常响应时间的预期都不能防御中继攻击</p>
+<p class="translated">研究人员鼓励特斯拉车主使用 PIN to Drive 功能，该功能要求在车辆可以驾驶之前输入一个四位数的 PIN，并在移动应用程序中禁用被动进入系统。</p>
+<p class="translated">特斯拉对安全漏洞并不陌生。今年早些时候，一名 19 岁的安全研究员表示，他能够<a href="https://web.archive.org/web/20230407072549/https://techcrunch.com/2022/01/24/teslamate-bug-teslas-exposed-remote/">远程访问世界各地的数十辆特斯拉</a>，因为在特斯拉车主普遍使用的开源日志工具中发现的安全漏洞将他们的汽车直接暴露在互联网上。</p>
+
+			</div>
+
+			</div>    
+</body>
+</html>
